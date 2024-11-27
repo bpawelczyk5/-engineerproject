@@ -1,0 +1,837 @@
+﻿<UserControl
+    x:Class="CerberPass.Views.Vault"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:CerberPass"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+    d:DesignHeight="800"
+    d:DesignWidth="1250"
+    mc:Ignorable="d">
+
+    <Grid>
+        <!--  InfoBar  -->
+        <ui:InfoBar
+            x:Name="infoCopy"
+            Title="Informacja"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            IsOpen="False"
+            Message="Tekst skopiowano do schowka."
+            Severity="Informational" />
+
+        <!--  Search TextBox  -->
+        <ui:TextBox
+            x:Name="SearchTextBox"
+            Margin="70,120,430,0"
+            VerticalAlignment="Top"
+            Icon="{ui:SymbolIcon Search32}"
+            PlaceholderText="Szukaj"
+            TextChanged="SearchTextBox_TextChanged" />
+
+
+
+        <!--  ToggleSwitches  -->
+        <StackPanel
+            Margin="70,161,0,0"
+            VerticalAlignment="Top"
+            Orientation="Horizontal">
+            <ui:ToggleSwitch
+                x:Name="CreditCardsToggle"
+                Width="90"
+                Height="46"
+                Margin="0,0,20,0"
+                Checked="ToggleSwitch_Checked"
+                Content="Karty" />
+
+            <ui:ToggleSwitch
+                x:Name="ContactsToggle"
+                Width="104"
+                Height="46"
+                Margin="0,0,20,0"
+                Checked="ToggleSwitch_Checked"
+                Content="Kontakty" />
+
+            <ui:ToggleSwitch
+                x:Name="NotesToggle"
+                Width="100"
+                Height="46"
+                Checked="ToggleSwitch_Checked"
+                Content="Notatki" />
+        </StackPanel>
+
+        <!--  Add Button  -->
+        <ui:Button
+            Grid.Row="0"
+            Width="110"
+            Margin="0,122,120,0"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Top"
+            Click="AddButton_Click"
+            Content="Dodaj" />
+
+        <!--  CreditCard ListView  -->
+        <ui:ListView
+            x:Name="creditCardsListView"
+            Margin="70,200,120,10"
+            Padding="5"
+            BorderBrush="Transparent"
+            BorderThickness="0"
+            Visibility="Collapsed">
+
+            <ui:ListView.View>
+                <ui:GridView>
+
+                    <ui:GridViewColumn Width="Auto" Header="Nazwa">
+                        <ui:GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <ui:TextBlock
+                                    Margin="0,0,20,0"
+                                    FontSize="15"
+                                    Text="{Binding Name}"
+                                    TextTrimming="CharacterEllipsis"
+                                    ToolTipService.ToolTip="{Binding Name}" />
+                            </DataTemplate>
+                        </ui:GridViewColumn.CellTemplate>
+                    </ui:GridViewColumn>
+
+                    <ui:GridViewColumn Width="160" Header="Numer karty">
+                        <ui:GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <ui:TextBlock
+                                    FontSize="15"
+                                    Text="{Binding DisplayCardNumber}"
+                                    TextTrimming="CharacterEllipsis"
+                                    ToolTipService.ToolTip="{Binding CardNumber}" />
+                            </DataTemplate>
+                        </ui:GridViewColumn.CellTemplate>
+                    </ui:GridViewColumn>
+
+                    <ui:GridViewColumn Width="Auto">
+                        <ui:GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <StackPanel VerticalAlignment="Center" Orientation="Horizontal">
+                                    <ui:Button
+                                        Width="20"
+                                        Height="20"
+                                        Padding="0"
+                                        HorizontalAlignment="Center"
+                                        VerticalAlignment="Center"
+                                        Background="Transparent"
+                                        BorderBrush="Transparent"
+                                        BorderThickness="0"
+                                        Click="CopyCreditCardButton_Click"
+                                        DataContext="{Binding}">
+                                        <ui:Button.Content>
+                                            <ui:SymbolIcon
+                                                Width="20"
+                                                Height="20"
+                                                Symbol="Copy24" />
+                                        </ui:Button.Content>
+                                    </ui:Button>
+
+                                    <ui:Button
+                                        Width="20"
+                                        Height="20"
+                                        Margin="5,0,0,0"
+                                        Padding="0"
+                                        HorizontalAlignment="Center"
+                                        VerticalAlignment="Center"
+                                        Background="Transparent"
+                                        BorderBrush="Transparent"
+                                        BorderThickness="0"
+                                        Click="ShowCardNumber_Click"
+                                        Tag="{Binding}">
+                                        <ui:Button.Content>
+                                            <ui:SymbolIcon
+                                                Width="20"
+                                                Height="20"
+                                                Symbol="Eye24" />
+                                        </ui:Button.Content>
+                                    </ui:Button>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ui:GridViewColumn.CellTemplate>
+                    </ui:GridViewColumn>
+
+                    <ui:GridViewColumn Width="100" Header="Data ważności">
+                        <ui:GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <ui:TextBlock
+                                    FontSize="15"
+                                    Text="{Binding DisplayDate}"
+                                    TextTrimming="CharacterEllipsis"
+                                    ToolTipService.ToolTip="{Binding Date}" />
+                            </DataTemplate>
+                        </ui:GridViewColumn.CellTemplate>
+                    </ui:GridViewColumn>
+
+                    <ui:GridViewColumn Width="Auto">
+                        <ui:GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <StackPanel VerticalAlignment="Center" Orientation="Horizontal">
+                                    <ui:Button
+                                        Width="20"
+                                        Height="20"
+                                        Margin="0,0,0,0"
+                                        Padding="0"
+                                        HorizontalAlignment="Center"
+                                        VerticalAlignment="Center"
+                                        Background="Transparent"
+                                        BorderBrush="Transparent"
+                                        BorderThickness="0"
+                                        Click="CopyDateButton_Click"
+                                        DataContext="{Binding}">
+                                        <ui:Button.Content>
+                                            <ui:SymbolIcon
+                                                Width="20"
+                                                Height="20"
+                                                Symbol="Copy24" />
+                                        </ui:Button.Content>
+                                    </ui:Button>
+                                    <ui:Button
+                                        Width="20"
+                                        Height="20"
+                                        Margin="5,0,0,0"
+                                        Padding="0"
+                                        HorizontalAlignment="Center"
+                                        VerticalAlignment="Center"
+                                        Background="Transparent"
+                                        BorderBrush="Transparent"
+                                        BorderThickness="0"
+                                        Click="ShowDate_Click"
+                                        Tag="{Binding}">
+                                        <ui:Button.Content>
+                                            <ui:SymbolIcon
+                                                Width="20"
+                                                Height="20"
+                                                Symbol="Eye24" />
+                                        </ui:Button.Content>
+                                    </ui:Button>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ui:GridViewColumn.CellTemplate>
+                    </ui:GridViewColumn>
+
+                    <ui:GridViewColumn Width="50" Header="CVV">
+                        <ui:GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <ui:TextBlock
+                                    Margin="5,0,0,0"
+                                    FontSize="15"
+                                    Text="{Binding DisplayCvv}"
+                                    TextTrimming="CharacterEllipsis"
+                                    ToolTipService.ToolTip="{Binding CVV}" />
+                            </DataTemplate>
+                        </ui:GridViewColumn.CellTemplate>
+                    </ui:GridViewColumn>
+
+                    <ui:GridViewColumn Width="Auto">
+                        <ui:GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <StackPanel VerticalAlignment="Center" Orientation="Horizontal">
+                                    <ui:Button
+                                        Width="20"
+                                        Height="20"
+                                        Margin="5,0,0,0"
+                                        Padding="0"
+                                        HorizontalAlignment="Center"
+                                        VerticalAlignment="Center"
+                                        Background="Transparent"
+                                        BorderBrush="Transparent"
+                                        BorderThickness="0"
+                                        Click="CopyCVVButton_Click"
+                                        DataContext="{Binding}">
+                                        <ui:Button.Content>
+                                            <ui:SymbolIcon
+                                                Width="20"
+                                                Height="20"
+                                                Symbol="Copy24" />
+                                        </ui:Button.Content>
+                                    </ui:Button>
+                                    <ui:Button
+                                        Width="20"
+                                        Height="20"
+                                        Margin="5,0,0,0"
+                                        Padding="0"
+                                        HorizontalAlignment="Center"
+                                        VerticalAlignment="Center"
+                                        Background="Transparent"
+                                        BorderBrush="Transparent"
+                                        BorderThickness="0"
+                                        Click="ShowCVV_Click"
+                                        Tag="{Binding}">
+                                        <ui:Button.Content>
+                                            <ui:SymbolIcon
+                                                Width="20"
+                                                Height="20"
+                                                Symbol="Eye24" />
+                                        </ui:Button.Content>
+                                    </ui:Button>
+
+                                </StackPanel>
+                            </DataTemplate>
+                        </ui:GridViewColumn.CellTemplate>
+                    </ui:GridViewColumn>
+
+                    <ui:GridViewColumn Width="Auto">
+                        <ui:GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <StackPanel
+                                    Margin="20,0,0,0"
+                                    VerticalAlignment="Center"
+                                    Orientation="Horizontal">
+                                    <ui:Button
+                                        Width="20"
+                                        Height="20"
+                                        Margin="0,0,0,0"
+                                        Padding="0"
+                                        HorizontalAlignment="Center"
+                                        VerticalAlignment="Center"
+                                        Background="Transparent"
+                                        BorderBrush="Transparent"
+                                        BorderThickness="0"
+                                        Click="DeleteCreditCard_Click"
+                                        Tag="{Binding}">
+                                        <ui:Button.Content>
+                                            <ui:SymbolIcon
+                                                Width="20"
+                                                Height="20"
+                                                Symbol="Delete24" />
+                                        </ui:Button.Content>
+                                    </ui:Button>
+                                    <ui:Button
+                                        Width="20"
+                                        Height="20"
+                                        Margin="0,0,0,0"
+                                        Padding="0"
+                                        HorizontalAlignment="Center"
+                                        VerticalAlignment="Center"
+                                        Background="Transparent"
+                                        BorderBrush="Transparent"
+                                        BorderThickness="0"
+                                        Click="EditCreditCard_Click"
+                                        Tag="{Binding}">
+                                        <ui:Button.Content>
+                                            <ui:SymbolIcon
+                                                Width="20"
+                                                Height="20"
+                                                Foreground="#FFBF00"
+                                                Symbol="Edit24" />
+                                        </ui:Button.Content>
+                                    </ui:Button>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ui:GridViewColumn.CellTemplate>
+                    </ui:GridViewColumn>
+
+                </ui:GridView>
+            </ui:ListView.View>
+        </ui:ListView>
+
+        <!--  Contacts ListView  -->
+        <ui:ListView
+            x:Name="contactsListView"
+            Margin="70,200,120,10"
+            Padding="5"
+            BorderBrush="Transparent"
+            BorderThickness="0"
+            Visibility="Collapsed">
+
+            <ui:ListView.View>
+                <ui:GridView>
+
+                    <ui:GridViewColumn Width="100" Header="Imię">
+                        <ui:GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <ui:TextBlock
+                                    Margin="0,0,20,0"
+                                    FontSize="15"
+                                    Text="{Binding Name}"
+                                    TextTrimming="CharacterEllipsis"
+                                    ToolTipService.ToolTip="{Binding Name}" />
+                            </DataTemplate>
+                        </ui:GridViewColumn.CellTemplate>
+                    </ui:GridViewColumn>
+
+                    <ui:GridViewColumn Width="100" Header="Nazwisko">
+                        <ui:GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <ui:TextBlock
+                                    FontSize="15"
+                                    Text="{Binding LastName}"
+                                    TextTrimming="CharacterEllipsis"
+                                    ToolTipService.ToolTip="{Binding LastName}" />
+                            </DataTemplate>
+                        </ui:GridViewColumn.CellTemplate>
+                    </ui:GridViewColumn>
+
+                    <ui:GridViewColumn Width="120" Header="Numer telefonu">
+                        <ui:GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <ui:TextBlock
+                                    Margin="5,0,0,0"
+                                    FontSize="15"
+                                    Text="{Binding DisplayPhoneNumber}"
+                                    TextTrimming="CharacterEllipsis"
+                                    ToolTipService.ToolTip="{Binding PhoneNumber}" />
+                            </DataTemplate>
+                        </ui:GridViewColumn.CellTemplate>
+                    </ui:GridViewColumn>
+
+                    <ui:GridViewColumn Width="Auto">
+                        <ui:GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <StackPanel VerticalAlignment="Center" Orientation="Horizontal">
+                                    <ui:Button
+                                        Width="20"
+                                        Height="20"
+                                        Margin="0,0,0,0"
+                                        Padding="0"
+                                        HorizontalAlignment="Center"
+                                        VerticalAlignment="Center"
+                                        Background="Transparent"
+                                        BorderBrush="Transparent"
+                                        BorderThickness="0"
+                                        Click="CopyPhoneNumberButton_Click"
+                                        DataContext="{Binding}">
+                                        <ui:Button.Content>
+                                            <ui:SymbolIcon
+                                                Width="20"
+                                                Height="20"
+                                                Symbol="Copy24" />
+                                        </ui:Button.Content>
+                                    </ui:Button>
+                                    <ui:Button
+                                        Width="20"
+                                        Height="20"
+                                        Margin="0,0,0,0"
+                                        Padding="0"
+                                        HorizontalAlignment="Center"
+                                        VerticalAlignment="Center"
+                                        Background="Transparent"
+                                        BorderBrush="Transparent"
+                                        BorderThickness="0"
+                                        Click="ShowContact_Click"
+                                        Tag="{Binding}">
+                                        <ui:Button.Content>
+                                            <ui:SymbolIcon
+                                                Width="20"
+                                                Height="20"
+                                                Symbol="Eye24" />
+                                        </ui:Button.Content>
+                                    </ui:Button>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ui:GridViewColumn.CellTemplate>
+                    </ui:GridViewColumn>
+
+                    <ui:GridViewColumn
+                        Width="Auto"
+                        MinWidth="200"
+                        Header="Email">
+                        <ui:GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <ui:TextBlock
+                                    FontSize="15"
+                                    Text="{Binding DisplayEmail}"
+                                    TextTrimming="CharacterEllipsis"
+                                    ToolTipService.ToolTip="{Binding Email}" />
+                            </DataTemplate>
+                        </ui:GridViewColumn.CellTemplate>
+                    </ui:GridViewColumn>
+
+                    <ui:GridViewColumn Width="Auto">
+                        <ui:GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <StackPanel VerticalAlignment="Center" Orientation="Horizontal">
+                                    <ui:Button
+                                        Width="20"
+                                        Height="20"
+                                        Margin="0,0,0,0"
+                                        Padding="0"
+                                        HorizontalAlignment="Center"
+                                        VerticalAlignment="Center"
+                                        Background="Transparent"
+                                        BorderBrush="Transparent"
+                                        BorderThickness="0"
+                                        Click="CopyEmailButton_Click"
+                                        Tag="{Binding Email}">
+                                        <ui:Button.Content>
+                                            <ui:SymbolIcon
+                                                Width="20"
+                                                Height="20"
+                                                Symbol="Copy24" />
+                                        </ui:Button.Content>
+                                    </ui:Button>
+
+                                    <ui:Button
+                                        Width="20"
+                                        Height="20"
+                                        Margin="0,0,0,0"
+                                        Padding="0"
+                                        HorizontalAlignment="Center"
+                                        VerticalAlignment="Center"
+                                        Background="Transparent"
+                                        BorderBrush="Transparent"
+                                        BorderThickness="0"
+                                        Click="ShowEmail_Click"
+                                        Tag="{Binding}">
+                                        <ui:Button.Content>
+                                            <ui:SymbolIcon
+                                                Width="20"
+                                                Height="20"
+                                                Symbol="Eye24" />
+                                        </ui:Button.Content>
+                                    </ui:Button>
+                                </StackPanel>
+
+                            </DataTemplate>
+                        </ui:GridViewColumn.CellTemplate>
+                    </ui:GridViewColumn>
+
+
+                    <ui:GridViewColumn Width="Auto">
+                        <ui:GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <StackPanel
+                                    Margin="20,0,0,0"
+                                    VerticalAlignment="Center"
+                                    Orientation="Horizontal">
+                                    <ui:Button
+                                        Width="20"
+                                        Height="20"
+                                        Margin="0,0,0,0"
+                                        Padding="0"
+                                        HorizontalAlignment="Center"
+                                        VerticalAlignment="Center"
+                                        Background="Transparent"
+                                        BorderBrush="Transparent"
+                                        BorderThickness="0"
+                                        Click="DeleteContact_Click"
+                                        Tag="{Binding}">
+                                        <ui:Button.Content>
+                                            <ui:SymbolIcon
+                                                Width="20"
+                                                Height="20"
+                                                Symbol="Delete24" />
+                                        </ui:Button.Content>
+                                    </ui:Button>
+                                    <ui:Button
+                                        Width="20"
+                                        Height="20"
+                                        Margin="0,0,0,0"
+                                        Padding="0"
+                                        HorizontalAlignment="Center"
+                                        VerticalAlignment="Center"
+                                        Background="Transparent"
+                                        BorderBrush="Transparent"
+                                        BorderThickness="0"
+                                        Click="EditContact_Click"
+                                        Tag="{Binding}">
+                                        <ui:Button.Content>
+                                            <ui:SymbolIcon
+                                                Width="20"
+                                                Height="20"
+                                                Foreground="#FFBF00"
+                                                Symbol="Edit24" />
+                                        </ui:Button.Content>
+                                    </ui:Button>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ui:GridViewColumn.CellTemplate>
+                    </ui:GridViewColumn>
+
+                </ui:GridView>
+            </ui:ListView.View>
+        </ui:ListView>
+
+        <!--  Notes ListView  -->
+        <ui:ListView
+            x:Name="notesListView"
+            Margin="70,200,120,10"
+            Padding="5"
+            BorderBrush="Transparent"
+            BorderThickness="0"
+            Visibility="Collapsed">
+
+            <ui:ListView.View>
+                <ui:GridView>
+
+                    <ui:GridViewColumn Width="Auto" Header="Tytuł">
+                        <ui:GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <ui:TextBlock
+                                    Margin="0,0,20,0"
+                                    FontSize="15"
+                                    Text="{Binding Name}"
+                                    TextTrimming="CharacterEllipsis"
+                                    ToolTipService.ToolTip="{Binding Name}" />
+                            </DataTemplate>
+                        </ui:GridViewColumn.CellTemplate>
+                    </ui:GridViewColumn>
+
+                    <ui:GridViewColumn
+                        Width="Auto"
+                        MinWidth="550"
+                        Header="Treść">
+                        <ui:GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <ui:TextBlock
+                                    FontSize="15"
+                                    Text="{Binding DisplayText}"
+                                    TextTrimming="CharacterEllipsis"
+                                    TextWrapping="Wrap"
+                                    ToolTipService.ToolTip="{Binding Text}" />
+                            </DataTemplate>
+                        </ui:GridViewColumn.CellTemplate>
+                    </ui:GridViewColumn>
+
+                    <ui:GridViewColumn Width="Auto">
+                        <ui:GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <StackPanel
+                                    Margin="20,0,0,0"
+                                    VerticalAlignment="Center"
+                                    Orientation="Horizontal">
+                                    <ui:Button
+                                        Width="20"
+                                        Height="20"
+                                        Margin="0,0,0,0"
+                                        Padding="0"
+                                        HorizontalAlignment="Center"
+                                        VerticalAlignment="Center"
+                                        Background="Transparent"
+                                        BorderBrush="Transparent"
+                                        BorderThickness="0"
+                                        Click="ShowNote_Click"
+                                        Tag="{Binding}">
+                                        <ui:Button.Content>
+                                            <ui:SymbolIcon
+                                                Width="20"
+                                                Height="20"
+                                                Symbol="Eye24" />
+                                        </ui:Button.Content>
+                                    </ui:Button>
+                                    <ui:Button
+                                        Width="20"
+                                        Height="20"
+                                        Margin="0,0,0,0"
+                                        Padding="0"
+                                        HorizontalAlignment="Center"
+                                        VerticalAlignment="Center"
+                                        Background="Transparent"
+                                        BorderBrush="Transparent"
+                                        BorderThickness="0"
+                                        Click="DeleteNotes_Click"
+                                        Tag="{Binding}">
+                                        <ui:Button.Content>
+                                            <ui:SymbolIcon
+                                                Width="20"
+                                                Height="20"
+                                                Symbol="Delete24" />
+                                        </ui:Button.Content>
+                                    </ui:Button>
+                                    <ui:Button
+                                        Width="20"
+                                        Height="20"
+                                        Margin="0,0,0,0"
+                                        Padding="0"
+                                        HorizontalAlignment="Center"
+                                        VerticalAlignment="Center"
+                                        Background="Transparent"
+                                        BorderBrush="Transparent"
+                                        BorderThickness="0"
+                                        Click="EditNote_Click"
+                                        Tag="{Binding}">
+                                        <ui:Button.Content>
+                                            <ui:SymbolIcon
+                                                Width="20"
+                                                Height="20"
+                                                Foreground="#FFBF00"
+                                                Symbol="Edit24" />
+                                        </ui:Button.Content>
+                                    </ui:Button>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ui:GridViewColumn.CellTemplate>
+                    </ui:GridViewColumn>
+
+                </ui:GridView>
+            </ui:ListView.View>
+        </ui:ListView>
+
+
+        <!--  ContentDialog for Adding Credit Card Data  -->
+        <ui:ContentDialog
+            x:Name="addCreditCardDialog"
+            Title="Dodawanie karty kredytowej"
+            ButtonClicked="CloseButton_Click"
+            CloseButtonText="Zamknij"
+            Visibility="Collapsed">
+            <StackPanel>
+                <ui:TextBox
+                    x:Name="creditCardNameTextBox"
+                    Margin="0,10,0,0"
+                    PlaceholderText="Nazwa" />
+                <ui:PasswordBox
+                    x:Name="cardNumberTextBox"
+                    Margin="0,10,0,0"
+                    PlaceholderText="Numer karty kredytowej" />
+                <ui:PasswordBox
+                    x:Name="expirationDateTextBox"
+                    Margin="0,10,0,0"
+                    PlaceholderText="Data" />
+                <ui:PasswordBox
+                    x:Name="cvvTextBox"
+                    Margin="0,10,0,0"
+                    PlaceholderText="CVV" />
+                <ui:Button
+                    x:Name="addCreditCardButton"
+                    Margin="0,10,0,0"
+                    Click="AddCreditCardDialog_ButtonClicked"
+                    Content="Dodaj" />
+            </StackPanel>
+        </ui:ContentDialog>
+
+        <!--  ContentDialog for Editing Credit Card Data  -->
+        <ui:ContentDialog
+            x:Name="editCreditCardDialog"
+            Title="Edytowanie danych"
+            ButtonClicked="CloseButton_Click"
+            CloseButtonText="Zamknij"
+            Visibility="Collapsed">
+            <StackPanel>
+                <ui:TextBox
+                    x:Name="editCreditCardNameTextBox"
+                    Margin="0,10,0,0"
+                    PlaceholderText="Nazwa" />
+                <ui:PasswordBox
+                    x:Name="editCardNumberTextBox"
+                    Margin="0,10,0,0"
+                    PlaceholderText="Numer karty kredytowej" />
+                <ui:PasswordBox
+                    x:Name="editExpirationDateTextBox"
+                    Margin="0,10,0,0"
+                    PlaceholderText="Data" />
+                <ui:PasswordBox
+                    x:Name="editCvvTextBox"
+                    Margin="0,10,0,0"
+                    PlaceholderText="CVV" />
+                <ui:Button
+                    x:Name="editCreditCardButton"
+                    Margin="0,10,0,0"
+                    Click="EditCreditCardDialog_ButtonClicked"
+                    Content="Dodaj" />
+            </StackPanel>
+        </ui:ContentDialog>
+
+        <!--  ContentDialog for Adding Contact Data  -->
+        <ui:ContentDialog
+            x:Name="addContactDialog"
+            Title="Dodawanie kontaktu"
+            ButtonClicked="CloseButton_Click"
+            CloseButtonText="Zamknij"
+            Visibility="Collapsed">
+            <StackPanel>
+                <ui:TextBox
+                    x:Name="contactNameTextBox"
+                    Margin="0,10,0,0"
+                    PlaceholderText="Imię" />
+                <ui:TextBox
+                    x:Name="contactLastNameTextBox"
+                    Margin="0,10,0,0"
+                    PlaceholderText="Nazwisko" />
+                <ui:TextBox
+                    x:Name="contactPhoneNumberTextBox"
+                    Margin="0,10,0,0"
+                    PlaceholderText="Numer telefonu" />
+                <ui:TextBox
+                    x:Name="contactEmailTextBox"
+                    Margin="0,10,0,0"
+                    PlaceholderText="Email" />
+                <ui:Button
+                    x:Name="addContactButton"
+                    Margin="0,10,0,0"
+                    Click="AddContactDialog_ButtonClicked"
+                    Content="Dodaj" />
+            </StackPanel>
+        </ui:ContentDialog>
+
+        <!--  ContentDialog for Editing Contact Data  -->
+        <ui:ContentDialog
+            x:Name="editContactDialog"
+            Title="Edytowanie danych"
+            ButtonClicked="CloseButton_Click"
+            CloseButtonText="Zamknij"
+            Visibility="Collapsed">
+            <StackPanel>
+                <ui:TextBox
+                    x:Name="editContactNameTextBox"
+                    Margin="0,10,0,0"
+                    PlaceholderText="Imię" />
+                <ui:TextBox
+                    x:Name="editContactLastNameTextBox"
+                    Margin="0,10,0,0"
+                    PlaceholderText="Nazwisko" />
+                <ui:TextBox
+                    x:Name="editContactPhoneNumberTextBox"
+                    Margin="0,10,0,0"
+                    PlaceholderText="Numer telefonu" />
+                <ui:TextBox
+                    x:Name="editContactEmailTextBox"
+                    Margin="0,10,0,0"
+                    PlaceholderText="Email" />
+                <ui:Button
+                    x:Name="editAddContactButton"
+                    Margin="0,10,0,0"
+                    Click="EditContactDialog_ButtonClicked"
+                    Content="Dodaj" />
+            </StackPanel>
+        </ui:ContentDialog>
+
+
+        <!--  ContentDialog for Adding Note Data  -->
+        <ui:ContentDialog
+            x:Name="addNoteDialog"
+            Title="Dodawanie notatki"
+            ButtonClicked="CloseButton_Click"
+            CloseButtonText="Zamknij"
+            Visibility="Collapsed">
+            <StackPanel>
+                <ui:TextBox
+                    x:Name="noteTitleTextBox"
+                    Margin="0,10,0,0"
+                    PlaceholderText="Tytuł" />
+                <ui:RichTextBox x:Name="noteContentTextBox" Margin="0,10,0,0" />
+                <ui:Button
+                    x:Name="addNoteButton"
+                    Margin="0,10,0,0"
+                    Click="AddNoteDialog_ButtonClicked"
+                    Content="Dodaj" />
+            </StackPanel>
+        </ui:ContentDialog>
+
+        <!--  ContentDialog for Editing Note Data  -->
+        <ui:ContentDialog
+            x:Name="editNoteDialog"
+            Title="Edytowanie danych"
+            ButtonClicked="CloseButton_Click"
+            CloseButtonText="Zamknij"
+            Visibility="Collapsed">
+            <StackPanel>
+                <ui:TextBox
+                    x:Name="editNoteTitleTextBox"
+                    Margin="0,10,0,0"
+                    PlaceholderText="Tytuł" />
+                <ui:RichTextBox x:Name="editNoteContentTextBox" Margin="0,10,0,0" />
+                <ui:Button
+                    x:Name="editNoteButton"
+                    Margin="0,10,0,0"
+                    Click="EditNoteDialog_ButtonClicked"
+                    Content="Dodaj" />
+            </StackPanel>
+        </ui:ContentDialog>
+    </Grid>
+</UserControl>

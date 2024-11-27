@@ -1,0 +1,84 @@
+﻿<UserControl
+    x:Class="CerberPass.Views.Home"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:CerberPass"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:system="clr-namespace:System;assembly=System.Runtime"
+    xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+    d:DesignHeight="800"
+    d:DesignWidth="1250"
+    mc:Ignorable="d">
+
+    <Grid>
+        <!--  Wyszukiwarka  -->
+        <ui:TextBox
+            x:Name="searchBox"
+            Margin="70,120,430,0"
+            VerticalAlignment="Top"
+            Icon="{ui:SymbolIcon Search32}"
+            PlaceholderText="Szukaj"
+            TextChanged="TextBox_TextChanged" />
+
+        <!--  Panel do wyświetlania ulubionych elementów  -->
+        <WrapPanel
+            x:Name="favoritesWrapPanel"
+            Margin="70,180,70,0"
+            VerticalAlignment="Top"
+            Orientation="Horizontal" />
+
+        <WrapPanel
+            x:Name="recentlyCopiedWrapPanel"
+            Margin="70,517,70,0"
+            VerticalAlignment="Top"
+            Orientation="Horizontal" />
+
+        <!--  Pozostała część XAML  -->
+        <ui:TextBlock
+            Margin="70,466,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            FontTypography="Subtitle"
+            Foreground="White"
+            Text="Ostatnio kopiowane" />
+
+        <ui:ContentDialog
+            x:Name="FavouritePasswordDialog"
+            Title="Dane logowania"
+            ButtonClicked="CloseButton_Click"
+            CloseButtonText="Zamknij"
+            Visibility="Collapsed">
+            <StackPanel Width="349" Height="270">
+                <ui:TextBlock Text="Nazwa:" />
+                <ui:TextBox
+                    x:Name="readNameTextBox"
+                    Margin="0,10,0,0"
+                    PlaceholderText="Nazwa" />
+
+                <StackPanel Margin="0,10,0,0" Orientation="Horizontal">
+                    <ui:TextBlock Text="Login:" />
+                    <ui:TextBlock Margin="142,0,0,0" Text="Hasło:" />
+                </StackPanel>
+
+                <StackPanel Margin="0,10,0,0" Orientation="Horizontal">
+                    <ui:TextBox
+                        x:Name="readUsernameTextBox"
+                        Width="170"
+                        PlaceholderText="Login" />
+                    <ui:PasswordBox
+                        x:Name="readPasswordTextBox"
+                        Width="170"
+                        Margin="9,0,10,0"
+                        PlaceholderText="Hasło" />
+                </StackPanel>
+
+                <ui:TextBlock Margin="0,10,0,0" Text="URL:" />
+                <ui:TextBox
+                    x:Name="readUrlTextBox"
+                    Margin="0,10,0,0"
+                    PlaceholderText="URL" />
+            </StackPanel>
+        </ui:ContentDialog>
+    </Grid>
+</UserControl>

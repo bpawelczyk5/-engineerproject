@@ -1,0 +1,75 @@
+﻿<ui:FluentWindow
+    x:Class="CerberPass.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:CerberPass"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+    Title="MainWindow"
+    Width="1076"
+    Height="851"
+    MinWidth="900"
+    d:DataContext="{d:DesignInstance local:MainWindow,
+                                     IsDesignTimeCreatable=False}"
+    d:DesignHeight="851"
+    d:DesignWidth="1076"
+    ui:Design.Background="{DynamicResource ApplicationBackgroundBrush}"
+    ui:Design.Foreground="{DynamicResource TextFillColorPrimaryBrush}"
+    ExtendsContentIntoTitleBar="True"
+    WindowBackdropType="Mica"
+    WindowCornerPreference="Round"
+    WindowStartupLocation="CenterScreen"
+    mc:Ignorable="d">
+    <Grid>
+        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" />
+        <ui:NavigationView
+            MinHeight="300"
+            Margin="0,40,0,0"
+            IsBackButtonVisible="Collapsed"
+            IsPaneToggleVisible="False"
+            PaneDisplayMode="LeftFluent">
+            <ui:NavigationView.MenuItems>
+                <ui:NavigationViewItem
+                    Width="95"
+                    Content="Home"
+                    Icon="{ui:SymbolIcon Home24}"
+                    PreviewMouseLeftButtonDown="NavigationViewItem_PreviewMouseLeftButtonDown"
+                    Tag="Home" />
+                <ui:NavigationViewItem
+                    Width="95"
+                    Content="Pass"
+                    Icon="{ui:SymbolIcon Password24}"
+                    PreviewMouseLeftButtonDown="NavigationViewItem_PreviewMouseLeftButtonDown"
+                    Tag="Pass" />
+                <ui:NavigationViewItem
+                    Width="95"
+                    Content="Vault"
+                    Icon="{ui:SymbolIcon Vault16}"
+                    PreviewMouseLeftButtonDown="NavigationViewItem_PreviewMouseLeftButtonDown"
+                    Tag="Vault" />
+                <ui:NavigationViewItem
+                    Width="95"
+                    Content="PassGen"
+                    Icon="{ui:SymbolIcon Edit16}"
+                    PreviewMouseLeftButtonDown="NavigationViewItem_PreviewMouseLeftButtonDown"
+                    Tag="PassGen" />
+            </ui:NavigationView.MenuItems>
+        </ui:NavigationView>
+
+        <ui:TitleBar
+            Title="CerberPass"
+            Height="35"
+            Icon="{ui:SymbolIcon ArrowLeft48}" />
+
+        <ui:TextBlock
+            Margin="172,80,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            FontTypography="TitleLarge"
+            Foreground="White"
+            Text="CerberPass" />
+
+        <ContentControl x:Name="MainContent" Margin="105,43,0,0" />
+    </Grid>
+</ui:FluentWindow>

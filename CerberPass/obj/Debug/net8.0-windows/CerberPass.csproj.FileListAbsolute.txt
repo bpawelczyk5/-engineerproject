@@ -1,0 +1,503 @@
+C:\Users\ViGO\Desktop\CerberPassV6_4\CerberPass\bin\Debug\net8.0-windows\CerberPass.exe
+C:\Users\ViGO\Desktop\CerberPassV6_4\CerberPass\bin\Debug\net8.0-windows\CerberPass.deps.json
+C:\Users\ViGO\Desktop\CerberPassV6_4\CerberPass\bin\Debug\net8.0-windows\CerberPass.runtimeconfig.json
+C:\Users\ViGO\Desktop\CerberPassV6_4\CerberPass\bin\Debug\net8.0-windows\CerberPass.dll
+C:\Users\ViGO\Desktop\CerberPassV6_4\CerberPass\bin\Debug\net8.0-windows\CerberPass.pdb
+C:\Users\ViGO\Desktop\CerberPassV6_4\CerberPass\bin\Debug\net8.0-windows\EntityFramework.SqlServer.dll
+C:\Users\ViGO\Desktop\CerberPassV6_4\CerberPass\bin\Debug\net8.0-windows\EntityFramework.dll
+C:\Users\ViGO\Desktop\CerberPassV6_4\CerberPass\bin\Debug\net8.0-windows\System.Data.SQLite.dll
+C:\Users\ViGO\Desktop\CerberPassV6_4\CerberPass\bin\Debug\net8.0-windows\System.Data.SqlClient.dll
+C:\Users\ViGO\Desktop\CerberPassV6_4\CerberPass\bin\Debug\net8.0-windows\System.Data.SQLite.EF6.dll
+C:\Users\ViGO\Desktop\CerberPassV6_4\CerberPass\bin\Debug\net8.0-windows\Wpf.Ui.dll
+C:\Users\ViGO\Desktop\CerberPassV6_4\CerberPass\bin\Debug\net8.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\ViGO\Desktop\CerberPassV6_4\CerberPass\bin\Debug\net8.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\ViGO\Desktop\CerberPassV6_4\CerberPass\bin\Debug\net8.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\ViGO\Desktop\CerberPassV6_4\CerberPass\bin\Debug\net8.0-windows\runtimes\linux-x64\native\SQLite.Interop.dll
+C:\Users\ViGO\Desktop\CerberPassV6_4\CerberPass\bin\Debug\net8.0-windows\runtimes\osx-x64\native\SQLite.Interop.dll
+C:\Users\ViGO\Desktop\CerberPassV6_4\CerberPass\bin\Debug\net8.0-windows\runtimes\win-x64\native\SQLite.Interop.dll
+C:\Users\ViGO\Desktop\CerberPassV6_4\CerberPass\bin\Debug\net8.0-windows\runtimes\win-x86\native\SQLite.Interop.dll
+C:\Users\ViGO\Desktop\CerberPassV6_4\CerberPass\bin\Debug\net8.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\ViGO\Desktop\CerberPassV6_4\CerberPass\bin\Debug\net8.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\ViGO\Desktop\CerberPassV6_4\CerberPass\obj\Debug\net8.0-windows\CerberPass.csproj.AssemblyReference.cache
+C:\Users\ViGO\Desktop\CerberPassV6_4\CerberPass\obj\Debug\net8.0-windows\Views\AddContacts.g.cs
+C:\Users\ViGO\Desktop\CerberPassV6_4\CerberPass\obj\Debug\net8.0-windows\Views\AddCreditCard.g.cs
+C:\Users\ViGO\Desktop\CerberPassV6_4\CerberPass\obj\Debug\net8.0-windows\Views\AddData.g.cs
+C:\Users\ViGO\Desktop\CerberPassV6_4\CerberPass\obj\Debug\net8.0-windows\Views\AddNotes.g.cs
+C:\Users\ViGO\Desktop\CerberPassV6_4\CerberPass\obj\Debug\net8.0-windows\Views\Home.g.cs
+C:\Users\ViGO\Desktop\CerberPassV6_4\CerberPass\obj\Debug\net8.0-windows\Views\Login.g.cs
+C:\Users\ViGO\Desktop\CerberPassV6_4\CerberPass\obj\Debug\net8.0-windows\Views\Passwords.g.cs
+C:\Users\ViGO\Desktop\CerberPassV6_4\CerberPass\obj\Debug\net8.0-windows\Views\Random.g.cs
+C:\Users\ViGO\Desktop\CerberPassV6_4\CerberPass\obj\Debug\net8.0-windows\Views\Register.g.cs
+C:\Users\ViGO\Desktop\CerberPassV6_4\CerberPass\obj\Debug\net8.0-windows\Views\Settings.g.cs
+C:\Users\ViGO\Desktop\CerberPassV6_4\CerberPass\obj\Debug\net8.0-windows\Views\Vault.g.cs
+C:\Users\ViGO\Desktop\CerberPassV6_4\CerberPass\obj\Debug\net8.0-windows\Windows\LoginWindow.g.cs
+C:\Users\ViGO\Desktop\CerberPassV6_4\CerberPass\obj\Debug\net8.0-windows\Windows\MainWindow.g.cs
+C:\Users\ViGO\Desktop\CerberPassV6_4\CerberPass\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\ViGO\Desktop\CerberPassV6_4\CerberPass\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\ViGO\Desktop\CerberPassV6_4\CerberPass\obj\Debug\net8.0-windows\CerberPass_MarkupCompile.cache
+C:\Users\ViGO\Desktop\CerberPassV6_4\CerberPass\obj\Debug\net8.0-windows\CerberPass_MarkupCompile.lref
+C:\Users\ViGO\Desktop\CerberPassV6_4\CerberPass\obj\Debug\net8.0-windows\App.baml
+C:\Users\ViGO\Desktop\CerberPassV6_4\CerberPass\obj\Debug\net8.0-windows\Views\AddContacts.baml
+C:\Users\ViGO\Desktop\CerberPassV6_4\CerberPass\obj\Debug\net8.0-windows\Views\AddCreditCard.baml
+C:\Users\ViGO\Desktop\CerberPassV6_4\CerberPass\obj\Debug\net8.0-windows\Views\AddData.baml
+C:\Users\ViGO\Desktop\CerberPassV6_4\CerberPass\obj\Debug\net8.0-windows\Views\AddNotes.baml
+C:\Users\ViGO\Desktop\CerberPassV6_4\CerberPass\obj\Debug\net8.0-windows\Views\Home.baml
+C:\Users\ViGO\Desktop\CerberPassV6_4\CerberPass\obj\Debug\net8.0-windows\Views\Login.baml
+C:\Users\ViGO\Desktop\CerberPassV6_4\CerberPass\obj\Debug\net8.0-windows\Views\Passwords.baml
+C:\Users\ViGO\Desktop\CerberPassV6_4\CerberPass\obj\Debug\net8.0-windows\Views\Random.baml
+C:\Users\ViGO\Desktop\CerberPassV6_4\CerberPass\obj\Debug\net8.0-windows\Views\Register.baml
+C:\Users\ViGO\Desktop\CerberPassV6_4\CerberPass\obj\Debug\net8.0-windows\Views\Settings.baml
+C:\Users\ViGO\Desktop\CerberPassV6_4\CerberPass\obj\Debug\net8.0-windows\Views\Vault.baml
+C:\Users\ViGO\Desktop\CerberPassV6_4\CerberPass\obj\Debug\net8.0-windows\Windows\LoginWindow.baml
+C:\Users\ViGO\Desktop\CerberPassV6_4\CerberPass\obj\Debug\net8.0-windows\Windows\MainWindow.baml
+C:\Users\ViGO\Desktop\CerberPassV6_4\CerberPass\obj\Debug\net8.0-windows\CerberPass.g.resources
+C:\Users\ViGO\Desktop\CerberPassV6_4\CerberPass\obj\Debug\net8.0-windows\CerberPass.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ViGO\Desktop\CerberPassV6_4\CerberPass\obj\Debug\net8.0-windows\CerberPass.AssemblyInfoInputs.cache
+C:\Users\ViGO\Desktop\CerberPassV6_4\CerberPass\obj\Debug\net8.0-windows\CerberPass.AssemblyInfo.cs
+C:\Users\ViGO\Desktop\CerberPassV6_4\CerberPass\obj\Debug\net8.0-windows\CerberPass.csproj.CoreCompileInputs.cache
+C:\Users\ViGO\Desktop\CerberPassV6_4\CerberPass\obj\Debug\net8.0-windows\CerberPass.csproj.Up2Date
+C:\Users\ViGO\Desktop\CerberPassV6_4\CerberPass\obj\Debug\net8.0-windows\CerberPass.dll
+C:\Users\ViGO\Desktop\CerberPassV6_4\CerberPass\obj\Debug\net8.0-windows\refint\CerberPass.dll
+C:\Users\ViGO\Desktop\CerberPassV6_4\CerberPass\obj\Debug\net8.0-windows\CerberPass.pdb
+C:\Users\ViGO\Desktop\CerberPassV6_4\CerberPass\obj\Debug\net8.0-windows\CerberPass.genruntimeconfig.cache
+C:\Users\ViGO\Desktop\CerberPassV6_4\CerberPass\obj\Debug\net8.0-windows\ref\CerberPass.dll
+C:\Users\CzyK\Downloads\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.csproj.AssemblyReference.cache
+C:\Users\CzyK\Downloads\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\EditDialog.xaml.baml
+C:\Users\CzyK\Downloads\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\AddContacts.g.cs
+C:\Users\CzyK\Downloads\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\AddCreditCard.g.cs
+C:\Users\CzyK\Downloads\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\AddData.g.cs
+C:\Users\CzyK\Downloads\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\AddNotes.g.cs
+C:\Users\CzyK\Downloads\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\EditDialog.xaml.g.cs
+C:\Users\CzyK\Downloads\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Home.g.cs
+C:\Users\CzyK\Downloads\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Login.g.cs
+C:\Users\CzyK\Downloads\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\PassGen.g.cs
+C:\Users\CzyK\Downloads\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Passwords.g.cs
+C:\Users\CzyK\Downloads\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Register.g.cs
+C:\Users\CzyK\Downloads\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Settings.g.cs
+C:\Users\CzyK\Downloads\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Vault.g.cs
+C:\Users\CzyK\Downloads\CerberPass\CerberPass\obj\Debug\net8.0-windows\Windows\LoginWindow.g.cs
+C:\Users\CzyK\Downloads\CerberPass\CerberPass\obj\Debug\net8.0-windows\Windows\MainWindow.g.cs
+C:\Users\CzyK\Downloads\CerberPass\CerberPass\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\CzyK\Downloads\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass_MarkupCompile.cache
+C:\Users\CzyK\Downloads\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass_MarkupCompile.lref
+C:\Users\CzyK\Downloads\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.dll
+C:\Users\CzyK\Downloads\CerberPass\CerberPass\obj\Debug\net8.0-windows\refint\CerberPass.dll
+C:\Users\CzyK\Downloads\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.pdb
+C:\Users\CzyK\Downloads\CerberPass\CerberPass\bin\Debug\net8.0-windows\CerberPass.exe
+C:\Users\CzyK\Downloads\CerberPass\CerberPass\bin\Debug\net8.0-windows\CerberPass.deps.json
+C:\Users\CzyK\Downloads\CerberPass\CerberPass\bin\Debug\net8.0-windows\CerberPass.runtimeconfig.json
+C:\Users\CzyK\Downloads\CerberPass\CerberPass\bin\Debug\net8.0-windows\CerberPass.dll
+C:\Users\CzyK\Downloads\CerberPass\CerberPass\bin\Debug\net8.0-windows\CerberPass.pdb
+C:\Users\CzyK\Downloads\CerberPass\CerberPass\bin\Debug\net8.0-windows\EntityFramework.SqlServer.dll
+C:\Users\CzyK\Downloads\CerberPass\CerberPass\bin\Debug\net8.0-windows\EntityFramework.dll
+C:\Users\CzyK\Downloads\CerberPass\CerberPass\bin\Debug\net8.0-windows\System.Data.SQLite.dll
+C:\Users\CzyK\Downloads\CerberPass\CerberPass\bin\Debug\net8.0-windows\System.Data.SqlClient.dll
+C:\Users\CzyK\Downloads\CerberPass\CerberPass\bin\Debug\net8.0-windows\System.Data.SQLite.EF6.dll
+C:\Users\CzyK\Downloads\CerberPass\CerberPass\bin\Debug\net8.0-windows\Wpf.Ui.dll
+C:\Users\CzyK\Downloads\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\CzyK\Downloads\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\CzyK\Downloads\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\CzyK\Downloads\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\linux-x64\native\SQLite.Interop.dll
+C:\Users\CzyK\Downloads\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\osx-x64\native\SQLite.Interop.dll
+C:\Users\CzyK\Downloads\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\win-x64\native\SQLite.Interop.dll
+C:\Users\CzyK\Downloads\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\win-x86\native\SQLite.Interop.dll
+C:\Users\CzyK\Downloads\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\CzyK\Downloads\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\CzyK\Downloads\CerberPass\CerberPass\obj\Debug\net8.0-windows\App.baml
+C:\Users\CzyK\Downloads\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\AddContacts.baml
+C:\Users\CzyK\Downloads\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\AddCreditCard.baml
+C:\Users\CzyK\Downloads\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\AddData.baml
+C:\Users\CzyK\Downloads\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\AddNotes.baml
+C:\Users\CzyK\Downloads\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Home.baml
+C:\Users\CzyK\Downloads\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Login.baml
+C:\Users\CzyK\Downloads\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\PassGen.baml
+C:\Users\CzyK\Downloads\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Passwords.baml
+C:\Users\CzyK\Downloads\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Register.baml
+C:\Users\CzyK\Downloads\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Settings.baml
+C:\Users\CzyK\Downloads\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Vault.baml
+C:\Users\CzyK\Downloads\CerberPass\CerberPass\obj\Debug\net8.0-windows\Windows\LoginWindow.baml
+C:\Users\CzyK\Downloads\CerberPass\CerberPass\obj\Debug\net8.0-windows\Windows\MainWindow.baml
+C:\Users\CzyK\Downloads\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.g.resources
+C:\Users\CzyK\Downloads\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CzyK\Downloads\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.AssemblyInfoInputs.cache
+C:\Users\CzyK\Downloads\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.AssemblyInfo.cs
+C:\Users\CzyK\Downloads\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.csproj.CoreCompileInputs.cache
+C:\Users\CzyK\Downloads\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.csproj.Up2Date
+C:\Users\CzyK\Downloads\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.genruntimeconfig.cache
+C:\Users\CzyK\Downloads\CerberPass\CerberPass\obj\Debug\net8.0-windows\ref\CerberPass.dll
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.csproj.AssemblyReference.cache
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Home.g.cs
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Login.g.cs
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\PassGen.g.cs
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Passwords.g.cs
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Register.g.cs
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Vault.g.cs
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\Windows\LoginWindow.g.cs
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\Windows\MainWindow.g.cs
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass_MarkupCompile.cache
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass_MarkupCompile.lref
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\bin\Debug\net8.0-windows\CerberPass.exe
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\bin\Debug\net8.0-windows\CerberPass.deps.json
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\bin\Debug\net8.0-windows\CerberPass.runtimeconfig.json
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\bin\Debug\net8.0-windows\CerberPass.dll
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\bin\Debug\net8.0-windows\CerberPass.pdb
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\bin\Debug\net8.0-windows\EntityFramework.SqlServer.dll
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\bin\Debug\net8.0-windows\EntityFramework.dll
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\bin\Debug\net8.0-windows\System.Data.SQLite.dll
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\bin\Debug\net8.0-windows\System.Data.SqlClient.dll
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\bin\Debug\net8.0-windows\System.Data.SQLite.EF6.dll
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\bin\Debug\net8.0-windows\Wpf.Ui.dll
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\linux-x64\native\SQLite.Interop.dll
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\osx-x64\native\SQLite.Interop.dll
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\win-x64\native\SQLite.Interop.dll
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\win-x86\native\SQLite.Interop.dll
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\App.baml
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Home.baml
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Login.baml
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\PassGen.baml
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Passwords.baml
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Register.baml
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Vault.baml
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\Windows\LoginWindow.baml
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\Windows\MainWindow.baml
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.g.resources
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.AssemblyInfoInputs.cache
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.AssemblyInfo.cs
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.csproj.CoreCompileInputs.cache
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.csproj.Up2Date
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.dll
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\refint\CerberPass.dll
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.pdb
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.genruntimeconfig.cache
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\ref\CerberPass.dll
+C:\Users\ViGO\Desktop\CerberPass\CerberPass\bin\Debug\net8.0-windows\CerberPass.exe
+C:\Users\ViGO\Desktop\CerberPass\CerberPass\bin\Debug\net8.0-windows\CerberPass.deps.json
+C:\Users\ViGO\Desktop\CerberPass\CerberPass\bin\Debug\net8.0-windows\CerberPass.runtimeconfig.json
+C:\Users\ViGO\Desktop\CerberPass\CerberPass\bin\Debug\net8.0-windows\CerberPass.dll
+C:\Users\ViGO\Desktop\CerberPass\CerberPass\bin\Debug\net8.0-windows\CerberPass.pdb
+C:\Users\ViGO\Desktop\CerberPass\CerberPass\bin\Debug\net8.0-windows\EntityFramework.SqlServer.dll
+C:\Users\ViGO\Desktop\CerberPass\CerberPass\bin\Debug\net8.0-windows\EntityFramework.dll
+C:\Users\ViGO\Desktop\CerberPass\CerberPass\bin\Debug\net8.0-windows\System.Data.SQLite.dll
+C:\Users\ViGO\Desktop\CerberPass\CerberPass\bin\Debug\net8.0-windows\System.Data.SqlClient.dll
+C:\Users\ViGO\Desktop\CerberPass\CerberPass\bin\Debug\net8.0-windows\System.Data.SQLite.EF6.dll
+C:\Users\ViGO\Desktop\CerberPass\CerberPass\bin\Debug\net8.0-windows\Wpf.Ui.dll
+C:\Users\ViGO\Desktop\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\ViGO\Desktop\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\ViGO\Desktop\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\ViGO\Desktop\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\linux-x64\native\SQLite.Interop.dll
+C:\Users\ViGO\Desktop\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\osx-x64\native\SQLite.Interop.dll
+C:\Users\ViGO\Desktop\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\win-x64\native\SQLite.Interop.dll
+C:\Users\ViGO\Desktop\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\win-x86\native\SQLite.Interop.dll
+C:\Users\ViGO\Desktop\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\ViGO\Desktop\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\ViGO\Desktop\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.csproj.AssemblyReference.cache
+C:\Users\ViGO\Desktop\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\EditDialog.xaml.baml
+C:\Users\ViGO\Desktop\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\AddContacts.g.cs
+C:\Users\ViGO\Desktop\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\AddCreditCard.g.cs
+C:\Users\ViGO\Desktop\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\AddData.g.cs
+C:\Users\ViGO\Desktop\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\AddNotes.g.cs
+C:\Users\ViGO\Desktop\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\EditDialog.xaml.g.cs
+C:\Users\ViGO\Desktop\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Home.g.cs
+C:\Users\ViGO\Desktop\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Login.g.cs
+C:\Users\ViGO\Desktop\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\PassGen.g.cs
+C:\Users\ViGO\Desktop\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Passwords.g.cs
+C:\Users\ViGO\Desktop\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Register.g.cs
+C:\Users\ViGO\Desktop\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Settings.g.cs
+C:\Users\ViGO\Desktop\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Vault.g.cs
+C:\Users\ViGO\Desktop\CerberPass\CerberPass\obj\Debug\net8.0-windows\Windows\LoginWindow.g.cs
+C:\Users\ViGO\Desktop\CerberPass\CerberPass\obj\Debug\net8.0-windows\Windows\MainWindow.g.cs
+C:\Users\ViGO\Desktop\CerberPass\CerberPass\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\ViGO\Desktop\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass_MarkupCompile.cache
+C:\Users\ViGO\Desktop\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass_MarkupCompile.lref
+C:\Users\ViGO\Desktop\CerberPass\CerberPass\obj\Debug\net8.0-windows\App.baml
+C:\Users\ViGO\Desktop\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\AddContacts.baml
+C:\Users\ViGO\Desktop\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\AddCreditCard.baml
+C:\Users\ViGO\Desktop\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\AddData.baml
+C:\Users\ViGO\Desktop\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\AddNotes.baml
+C:\Users\ViGO\Desktop\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Home.baml
+C:\Users\ViGO\Desktop\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Login.baml
+C:\Users\ViGO\Desktop\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\PassGen.baml
+C:\Users\ViGO\Desktop\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Passwords.baml
+C:\Users\ViGO\Desktop\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Register.baml
+C:\Users\ViGO\Desktop\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Settings.baml
+C:\Users\ViGO\Desktop\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Vault.baml
+C:\Users\ViGO\Desktop\CerberPass\CerberPass\obj\Debug\net8.0-windows\Windows\LoginWindow.baml
+C:\Users\ViGO\Desktop\CerberPass\CerberPass\obj\Debug\net8.0-windows\Windows\MainWindow.baml
+C:\Users\ViGO\Desktop\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.g.resources
+C:\Users\ViGO\Desktop\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ViGO\Desktop\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.AssemblyInfoInputs.cache
+C:\Users\ViGO\Desktop\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.AssemblyInfo.cs
+C:\Users\ViGO\Desktop\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.csproj.CoreCompileInputs.cache
+C:\Users\ViGO\Desktop\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.csproj.Up2Date
+C:\Users\ViGO\Desktop\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.dll
+C:\Users\ViGO\Desktop\CerberPass\CerberPass\obj\Debug\net8.0-windows\refint\CerberPass.dll
+C:\Users\ViGO\Desktop\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.pdb
+C:\Users\ViGO\Desktop\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.genruntimeconfig.cache
+C:\Users\ViGO\Desktop\CerberPass\CerberPass\obj\Debug\net8.0-windows\ref\CerberPass.dll
+C:\Users\ViGO\Desktop\nowe\CerberPass\CerberPass\bin\Debug\net8.0-windows\CerberPass.exe
+C:\Users\ViGO\Desktop\nowe\CerberPass\CerberPass\bin\Debug\net8.0-windows\CerberPass.deps.json
+C:\Users\ViGO\Desktop\nowe\CerberPass\CerberPass\bin\Debug\net8.0-windows\CerberPass.runtimeconfig.json
+C:\Users\ViGO\Desktop\nowe\CerberPass\CerberPass\bin\Debug\net8.0-windows\CerberPass.dll
+C:\Users\ViGO\Desktop\nowe\CerberPass\CerberPass\bin\Debug\net8.0-windows\CerberPass.pdb
+C:\Users\ViGO\Desktop\nowe\CerberPass\CerberPass\bin\Debug\net8.0-windows\EntityFramework.SqlServer.dll
+C:\Users\ViGO\Desktop\nowe\CerberPass\CerberPass\bin\Debug\net8.0-windows\EntityFramework.dll
+C:\Users\ViGO\Desktop\nowe\CerberPass\CerberPass\bin\Debug\net8.0-windows\System.Data.SQLite.dll
+C:\Users\ViGO\Desktop\nowe\CerberPass\CerberPass\bin\Debug\net8.0-windows\System.Data.SqlClient.dll
+C:\Users\ViGO\Desktop\nowe\CerberPass\CerberPass\bin\Debug\net8.0-windows\System.Data.SQLite.EF6.dll
+C:\Users\ViGO\Desktop\nowe\CerberPass\CerberPass\bin\Debug\net8.0-windows\Wpf.Ui.dll
+C:\Users\ViGO\Desktop\nowe\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\ViGO\Desktop\nowe\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\ViGO\Desktop\nowe\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\ViGO\Desktop\nowe\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\linux-x64\native\SQLite.Interop.dll
+C:\Users\ViGO\Desktop\nowe\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\osx-x64\native\SQLite.Interop.dll
+C:\Users\ViGO\Desktop\nowe\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\win-x64\native\SQLite.Interop.dll
+C:\Users\ViGO\Desktop\nowe\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\win-x86\native\SQLite.Interop.dll
+C:\Users\ViGO\Desktop\nowe\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\ViGO\Desktop\nowe\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\ViGO\Desktop\nowe\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.csproj.AssemblyReference.cache
+C:\Users\ViGO\Desktop\nowe\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\EditDialog.xaml.baml
+C:\Users\ViGO\Desktop\nowe\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\AddContacts.g.cs
+C:\Users\ViGO\Desktop\nowe\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\AddCreditCard.g.cs
+C:\Users\ViGO\Desktop\nowe\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\AddData.g.cs
+C:\Users\ViGO\Desktop\nowe\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\AddNotes.g.cs
+C:\Users\ViGO\Desktop\nowe\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\EditDialog.xaml.g.cs
+C:\Users\ViGO\Desktop\nowe\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Home.g.cs
+C:\Users\ViGO\Desktop\nowe\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Login.g.cs
+C:\Users\ViGO\Desktop\nowe\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\PassGen.g.cs
+C:\Users\ViGO\Desktop\nowe\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Passwords.g.cs
+C:\Users\ViGO\Desktop\nowe\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Register.g.cs
+C:\Users\ViGO\Desktop\nowe\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Settings.g.cs
+C:\Users\ViGO\Desktop\nowe\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Vault.g.cs
+C:\Users\ViGO\Desktop\nowe\CerberPass\CerberPass\obj\Debug\net8.0-windows\Windows\LoginWindow.g.cs
+C:\Users\ViGO\Desktop\nowe\CerberPass\CerberPass\obj\Debug\net8.0-windows\Windows\MainWindow.g.cs
+C:\Users\ViGO\Desktop\nowe\CerberPass\CerberPass\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\ViGO\Desktop\nowe\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass_MarkupCompile.cache
+C:\Users\ViGO\Desktop\nowe\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass_MarkupCompile.lref
+C:\Users\ViGO\Desktop\nowe\CerberPass\CerberPass\obj\Debug\net8.0-windows\App.baml
+C:\Users\ViGO\Desktop\nowe\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\AddContacts.baml
+C:\Users\ViGO\Desktop\nowe\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\AddCreditCard.baml
+C:\Users\ViGO\Desktop\nowe\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\AddData.baml
+C:\Users\ViGO\Desktop\nowe\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\AddNotes.baml
+C:\Users\ViGO\Desktop\nowe\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Home.baml
+C:\Users\ViGO\Desktop\nowe\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Login.baml
+C:\Users\ViGO\Desktop\nowe\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\PassGen.baml
+C:\Users\ViGO\Desktop\nowe\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Passwords.baml
+C:\Users\ViGO\Desktop\nowe\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Register.baml
+C:\Users\ViGO\Desktop\nowe\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Settings.baml
+C:\Users\ViGO\Desktop\nowe\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Vault.baml
+C:\Users\ViGO\Desktop\nowe\CerberPass\CerberPass\obj\Debug\net8.0-windows\Windows\LoginWindow.baml
+C:\Users\ViGO\Desktop\nowe\CerberPass\CerberPass\obj\Debug\net8.0-windows\Windows\MainWindow.baml
+C:\Users\ViGO\Desktop\nowe\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.g.resources
+C:\Users\ViGO\Desktop\nowe\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ViGO\Desktop\nowe\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.AssemblyInfoInputs.cache
+C:\Users\ViGO\Desktop\nowe\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.AssemblyInfo.cs
+C:\Users\ViGO\Desktop\nowe\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.csproj.CoreCompileInputs.cache
+C:\Users\ViGO\Desktop\nowe\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.csproj.Up2Date
+C:\Users\ViGO\Desktop\nowe\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.dll
+C:\Users\ViGO\Desktop\nowe\CerberPass\CerberPass\obj\Debug\net8.0-windows\refint\CerberPass.dll
+C:\Users\ViGO\Desktop\nowe\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.pdb
+C:\Users\ViGO\Desktop\nowe\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.genruntimeconfig.cache
+C:\Users\ViGO\Desktop\nowe\CerberPass\CerberPass\obj\Debug\net8.0-windows\ref\CerberPass.dll
+C:\Users\ViGO\Desktop\CerberPassEncryption\CerberPass\CerberPass\bin\Debug\net8.0-windows\CerberPass.exe
+C:\Users\ViGO\Desktop\CerberPassEncryption\CerberPass\CerberPass\bin\Debug\net8.0-windows\CerberPass.deps.json
+C:\Users\ViGO\Desktop\CerberPassEncryption\CerberPass\CerberPass\bin\Debug\net8.0-windows\CerberPass.runtimeconfig.json
+C:\Users\ViGO\Desktop\CerberPassEncryption\CerberPass\CerberPass\bin\Debug\net8.0-windows\CerberPass.dll
+C:\Users\ViGO\Desktop\CerberPassEncryption\CerberPass\CerberPass\bin\Debug\net8.0-windows\CerberPass.pdb
+C:\Users\ViGO\Desktop\CerberPassEncryption\CerberPass\CerberPass\bin\Debug\net8.0-windows\EntityFramework.SqlServer.dll
+C:\Users\ViGO\Desktop\CerberPassEncryption\CerberPass\CerberPass\bin\Debug\net8.0-windows\EntityFramework.dll
+C:\Users\ViGO\Desktop\CerberPassEncryption\CerberPass\CerberPass\bin\Debug\net8.0-windows\System.Data.SQLite.dll
+C:\Users\ViGO\Desktop\CerberPassEncryption\CerberPass\CerberPass\bin\Debug\net8.0-windows\System.Data.SqlClient.dll
+C:\Users\ViGO\Desktop\CerberPassEncryption\CerberPass\CerberPass\bin\Debug\net8.0-windows\System.Data.SQLite.EF6.dll
+C:\Users\ViGO\Desktop\CerberPassEncryption\CerberPass\CerberPass\bin\Debug\net8.0-windows\Wpf.Ui.dll
+C:\Users\ViGO\Desktop\CerberPassEncryption\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\ViGO\Desktop\CerberPassEncryption\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\ViGO\Desktop\CerberPassEncryption\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\ViGO\Desktop\CerberPassEncryption\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\linux-x64\native\SQLite.Interop.dll
+C:\Users\ViGO\Desktop\CerberPassEncryption\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\osx-x64\native\SQLite.Interop.dll
+C:\Users\ViGO\Desktop\CerberPassEncryption\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\win-x64\native\SQLite.Interop.dll
+C:\Users\ViGO\Desktop\CerberPassEncryption\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\win-x86\native\SQLite.Interop.dll
+C:\Users\ViGO\Desktop\CerberPassEncryption\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\ViGO\Desktop\CerberPassEncryption\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\ViGO\Desktop\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.csproj.AssemblyReference.cache
+C:\Users\ViGO\Desktop\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\EditDialog.xaml.baml
+C:\Users\ViGO\Desktop\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\AddContacts.g.cs
+C:\Users\ViGO\Desktop\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\AddCreditCard.g.cs
+C:\Users\ViGO\Desktop\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\AddData.g.cs
+C:\Users\ViGO\Desktop\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\AddNotes.g.cs
+C:\Users\ViGO\Desktop\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\EditDialog.xaml.g.cs
+C:\Users\ViGO\Desktop\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Home.g.cs
+C:\Users\ViGO\Desktop\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Login.g.cs
+C:\Users\ViGO\Desktop\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\PassGen.g.cs
+C:\Users\ViGO\Desktop\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Passwords.g.cs
+C:\Users\ViGO\Desktop\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Register.g.cs
+C:\Users\ViGO\Desktop\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Settings.g.cs
+C:\Users\ViGO\Desktop\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Vault.g.cs
+C:\Users\ViGO\Desktop\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Windows\LoginWindow.g.cs
+C:\Users\ViGO\Desktop\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Windows\MainWindow.g.cs
+C:\Users\ViGO\Desktop\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\ViGO\Desktop\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass_MarkupCompile.cache
+C:\Users\ViGO\Desktop\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass_MarkupCompile.lref
+C:\Users\ViGO\Desktop\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\App.baml
+C:\Users\ViGO\Desktop\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\AddContacts.baml
+C:\Users\ViGO\Desktop\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\AddCreditCard.baml
+C:\Users\ViGO\Desktop\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\AddData.baml
+C:\Users\ViGO\Desktop\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\AddNotes.baml
+C:\Users\ViGO\Desktop\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Home.baml
+C:\Users\ViGO\Desktop\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Login.baml
+C:\Users\ViGO\Desktop\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\PassGen.baml
+C:\Users\ViGO\Desktop\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Passwords.baml
+C:\Users\ViGO\Desktop\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Register.baml
+C:\Users\ViGO\Desktop\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Settings.baml
+C:\Users\ViGO\Desktop\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Vault.baml
+C:\Users\ViGO\Desktop\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Windows\LoginWindow.baml
+C:\Users\ViGO\Desktop\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Windows\MainWindow.baml
+C:\Users\ViGO\Desktop\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.g.resources
+C:\Users\ViGO\Desktop\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ViGO\Desktop\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.AssemblyInfoInputs.cache
+C:\Users\ViGO\Desktop\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.AssemblyInfo.cs
+C:\Users\ViGO\Desktop\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.csproj.CoreCompileInputs.cache
+C:\Users\ViGO\Desktop\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.csproj.Up2Date
+C:\Users\ViGO\Desktop\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.dll
+C:\Users\ViGO\Desktop\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\refint\CerberPass.dll
+C:\Users\ViGO\Desktop\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.pdb
+C:\Users\ViGO\Desktop\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.genruntimeconfig.cache
+C:\Users\ViGO\Desktop\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\ref\CerberPass.dll
+C:\Users\ViGO\Desktop\CerberPassEncryption\CerberPass\CerberPass\bin\Debug\net8.0-windows\BCrypt.Net-Next.dll
+I:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\bin\Debug\net8.0-windows\CerberPass.exe
+I:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\bin\Debug\net8.0-windows\CerberPass.deps.json
+I:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\bin\Debug\net8.0-windows\CerberPass.runtimeconfig.json
+I:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\bin\Debug\net8.0-windows\CerberPass.dll
+I:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\bin\Debug\net8.0-windows\CerberPass.pdb
+I:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\bin\Debug\net8.0-windows\BCrypt.Net-Next.dll
+I:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\bin\Debug\net8.0-windows\EntityFramework.SqlServer.dll
+I:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\bin\Debug\net8.0-windows\EntityFramework.dll
+I:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\bin\Debug\net8.0-windows\System.Data.SQLite.dll
+I:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\bin\Debug\net8.0-windows\System.Data.SqlClient.dll
+I:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\bin\Debug\net8.0-windows\System.Data.SQLite.EF6.dll
+I:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\bin\Debug\net8.0-windows\Wpf.Ui.dll
+I:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\win-arm64\native\sni.dll
+I:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\win-x64\native\sni.dll
+I:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\win-x86\native\sni.dll
+I:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\linux-x64\native\SQLite.Interop.dll
+I:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\osx-x64\native\SQLite.Interop.dll
+I:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\win-x64\native\SQLite.Interop.dll
+I:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\win-x86\native\SQLite.Interop.dll
+I:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+I:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+I:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.csproj.AssemblyReference.cache
+I:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\EditDialog.xaml.baml
+I:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\AddContacts.g.cs
+I:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\AddCreditCard.g.cs
+I:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\AddData.g.cs
+I:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\AddNotes.g.cs
+I:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\EditDialog.xaml.g.cs
+I:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Home.g.cs
+I:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Login.g.cs
+I:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\PassGen.g.cs
+I:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Passwords.g.cs
+I:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Register.g.cs
+I:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Settings.g.cs
+I:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Vault.g.cs
+I:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Windows\LoginWindow.g.cs
+I:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Windows\MainWindow.g.cs
+I:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\App.g.cs
+I:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass_MarkupCompile.cache
+I:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass_MarkupCompile.lref
+I:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\App.baml
+I:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\AddContacts.baml
+I:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\AddCreditCard.baml
+I:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\AddData.baml
+I:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\AddNotes.baml
+I:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Home.baml
+I:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Login.baml
+I:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\PassGen.baml
+I:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Passwords.baml
+I:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Register.baml
+I:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Settings.baml
+I:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Vault.baml
+I:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Windows\LoginWindow.baml
+I:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Windows\MainWindow.baml
+I:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.g.resources
+I:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.GeneratedMSBuildEditorConfig.editorconfig
+I:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.AssemblyInfoInputs.cache
+I:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.AssemblyInfo.cs
+I:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.csproj.CoreCompileInputs.cache
+I:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.csproj.CopyComplete
+I:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.dll
+I:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\refint\CerberPass.dll
+I:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.pdb
+I:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.genruntimeconfig.cache
+I:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\ref\CerberPass.dll
+J:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\bin\Debug\net8.0-windows\CerberPass.exe
+J:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\bin\Debug\net8.0-windows\CerberPass.deps.json
+J:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\bin\Debug\net8.0-windows\CerberPass.runtimeconfig.json
+J:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\bin\Debug\net8.0-windows\CerberPass.dll
+J:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\bin\Debug\net8.0-windows\CerberPass.pdb
+J:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\bin\Debug\net8.0-windows\BCrypt.Net-Next.dll
+J:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\bin\Debug\net8.0-windows\EntityFramework.SqlServer.dll
+J:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\bin\Debug\net8.0-windows\EntityFramework.dll
+J:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\bin\Debug\net8.0-windows\System.Data.SQLite.dll
+J:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\bin\Debug\net8.0-windows\System.Data.SqlClient.dll
+J:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\bin\Debug\net8.0-windows\System.Data.SQLite.EF6.dll
+J:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\bin\Debug\net8.0-windows\Wpf.Ui.dll
+J:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\win-arm64\native\sni.dll
+J:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\win-x64\native\sni.dll
+J:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\win-x86\native\sni.dll
+J:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\linux-x64\native\SQLite.Interop.dll
+J:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\osx-x64\native\SQLite.Interop.dll
+J:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\win-x64\native\SQLite.Interop.dll
+J:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\win-x86\native\SQLite.Interop.dll
+J:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+J:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+J:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.csproj.AssemblyReference.cache
+J:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\EditDialog.xaml.baml
+J:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\AddContacts.g.cs
+J:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\AddCreditCard.g.cs
+J:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\AddData.g.cs
+J:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\AddNotes.g.cs
+J:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\EditDialog.xaml.g.cs
+J:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Home.g.cs
+J:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Login.g.cs
+J:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\PassGen.g.cs
+J:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Passwords.g.cs
+J:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Register.g.cs
+J:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Settings.g.cs
+J:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Vault.g.cs
+J:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Windows\LoginWindow.g.cs
+J:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Windows\MainWindow.g.cs
+J:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\App.g.cs
+J:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass_MarkupCompile.cache
+J:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass_MarkupCompile.lref
+J:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\App.baml
+J:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\AddContacts.baml
+J:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\AddCreditCard.baml
+J:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\AddData.baml
+J:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\AddNotes.baml
+J:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Home.baml
+J:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Login.baml
+J:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\PassGen.baml
+J:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Passwords.baml
+J:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Register.baml
+J:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Settings.baml
+J:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Vault.baml
+J:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Windows\LoginWindow.baml
+J:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\Windows\MainWindow.baml
+J:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.g.resources
+J:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.GeneratedMSBuildEditorConfig.editorconfig
+J:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.AssemblyInfoInputs.cache
+J:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.AssemblyInfo.cs
+J:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.csproj.CoreCompileInputs.cache
+J:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.csproj.Up2Date
+J:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.dll
+J:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\refint\CerberPass.dll
+J:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.pdb
+J:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.genruntimeconfig.cache
+J:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\ref\CerberPass.dll
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\bin\Debug\net8.0-windows\BCrypt.Net-Next.dll

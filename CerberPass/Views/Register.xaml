@@ -1,0 +1,61 @@
+﻿<UserControl
+    x:Class="CerberPass.Views.Register"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:CerberPass"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:sys="clr-namespace:System.Windows.Controls;assembly=PresentationFramework"
+    xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+    xmlns:wpfUi="clr-namespace:Wpf.Ui.Controls;assembly=Wpf.Ui"
+    d:DesignHeight="800"
+    d:DesignWidth="600"
+    mc:Ignorable="d">
+    <Grid>
+        <ui:TextBlock
+            Margin="0,171,0,0"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            FontTypography="Subtitle"
+            Foreground="White"
+            Text="Podaj nazwę bazy danych" />
+
+        <ui:TextBox
+            x:Name="dbNameTextBox"
+            Width="250"
+            Margin="0,250,0,0"
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Top" />
+
+        <ui:PasswordBox
+            x:Name="repeatPasswordBox"
+            Width="200"
+            Margin="0,390,0,0"
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Top"
+            PlaceholderText="Hasło" />
+
+        <ui:PasswordBox
+            x:Name="passwordBox"
+            Width="200"
+            Margin="0,332,0,0"
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Top"
+            PlaceholderText="Hasło" />
+
+        <ui:Button
+            Width="166"
+            Margin="0,484,0,0"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            Click="CreateDatabase_Click"
+            Content="Utwórz" />
+
+        <ui:Button
+            Margin="0,659,50,0"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Top"
+            Click="BackToLogin_Click"
+            Content="Mam już konto" />
+    </Grid>
+</UserControl>
