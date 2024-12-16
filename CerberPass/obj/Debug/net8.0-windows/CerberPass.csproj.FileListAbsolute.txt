@@ -501,3 +501,4 @@ J:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-w
 J:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.genruntimeconfig.cache
 J:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\ref\CerberPass.dll
 C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\bin\Debug\net8.0-windows\BCrypt.Net-Next.dll
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.sourcelink.json

@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\CzyK\\Desktop\\Studia\\Praca in\u017Cynierska\\CerberPass\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{010627DC-93A1-48FC-9B64-343CCEACC66C}|CerberPass.Test\\CerberPass.Test.csproj|c:\\users\\czyk\\desktop\\studia\\praca in\u017Cynierska\\cerberpass\\cerberpass.test\\logintests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{010627DC-93A1-48FC-9B64-343CCEACC66C}|CerberPass.Test\\CerberPass.Test.csproj|solutionrelative:cerberpass.test\\logintests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{27A49A8D-D472-4136-9042-61A3E58F5991}|CerberPass.Test2\\CerberPass.Test2.csproj|c:\\users\\czyk\\desktop\\studia\\praca in\u017Cynierska\\cerberpass\\cerberpass.test2\\registertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27A49A8D-D472-4136-9042-61A3E58F5991}|CerberPass.Test2\\CerberPass.Test2.csproj|solutionrelative:cerberpass.test2\\registertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3EFA509-A008-413E-9ECE-126C98218298}|CerberPass\\CerberPass.csproj|c:\\users\\czyk\\desktop\\studia\\praca in\u017Cynierska\\cerberpass\\cerberpass\\views\\register.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E3EFA509-A008-413E-9ECE-126C98218298}|CerberPass\\CerberPass.csproj|solutionrelative:cerberpass\\views\\register.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "LoginTests.cs",
-              "DocumentMoniker": "C:\\Users\\CzyK\\Desktop\\Studia\\Praca in\u017Cynierska\\CerberPass\\CerberPass.Test\\LoginTests.cs",
-              "RelativeDocumentMoniker": "CerberPass.Test\\LoginTests.cs",
-              "ToolTip": "C:\\Users\\CzyK\\Desktop\\Studia\\Praca in\u017Cynierska\\CerberPass\\CerberPass.Test\\LoginTests.cs",
-              "RelativeToolTip": "CerberPass.Test\\LoginTests.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAAWAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Register.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\CzyK\\Desktop\\Studia\\Praca in\u017Cynierska\\CerberPass\\CerberPass\\Views\\Register.xaml.cs",
+              "RelativeDocumentMoniker": "CerberPass\\Views\\Register.xaml.cs",
+              "ToolTip": "C:\\Users\\CzyK\\Desktop\\Studia\\Praca in\u017Cynierska\\CerberPass\\CerberPass\\Views\\Register.xaml.cs",
+              "RelativeToolTip": "CerberPass\\Views\\Register.xaml.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAAAM4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T07:58:42.216Z",
+              "WhenOpened": "2024-12-02T16:56:01.505Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RegisterTests.cs",
+              "DocumentMoniker": "C:\\Users\\CzyK\\Desktop\\Studia\\Praca in\u017Cynierska\\CerberPass\\CerberPass.Test2\\RegisterTests.cs",
+              "RelativeDocumentMoniker": "CerberPass.Test2\\RegisterTests.cs",
+              "ToolTip": "C:\\Users\\CzyK\\Desktop\\Studia\\Praca in\u017Cynierska\\CerberPass\\CerberPass.Test2\\RegisterTests.cs",
+              "RelativeToolTip": "CerberPass.Test2\\RegisterTests.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAIwFAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T16:51:16.904Z",
               "EditorCaption": ""
             }
           ]

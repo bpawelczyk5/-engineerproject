@@ -14,7 +14,7 @@ namespace CerberPass.Tests
 
         [SetUp]
         public void Setup()
-        {
+        { 
             // Tworzenie zaszyfrowanej bazy danych testowej
             _tempEncryptedDbPath = Path.Combine(Path.GetTempPath(), $"{Guid.NewGuid()}.db");
             _tempDecryptedDbPath = Path.Combine(Path.GetTempPath(), $"{Guid.NewGuid()}.db");

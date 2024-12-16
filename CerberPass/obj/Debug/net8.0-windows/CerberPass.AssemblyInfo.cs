@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CerberPass")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+955a0063c67d0e71bd194631c9a1a078fc53ef13")]
 [assembly: System.Reflection.AssemblyProductAttribute("CerberPass")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CerberPass")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

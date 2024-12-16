@@ -17,7 +17,7 @@ namespace CerberPass.Views
             InitializeComponent();
         }
 
-        private void CreateDatabase_Click(object sender, RoutedEventArgs e)
+        public void CreateDatabase_Click(object sender, RoutedEventArgs e)
         {
             // Sprawdź, czy hasła są zgodne
             if (passwordBox.Password != repeatPasswordBox.Password)
@@ -84,13 +84,13 @@ namespace CerberPass.Views
             }
         }
 
-        private void BackToLogin_Click(object sender, RoutedEventArgs e)
+        public void BackToLogin_Click(object sender, RoutedEventArgs e)
         {
             LoginWindow loginWindow = (LoginWindow)Window.GetWindow(this);
             loginWindow.LoginContent.Content = new Views.Login();
         }
 
-        private void CreateTables(SQLiteConnection conn)
+        public void CreateTables(SQLiteConnection conn)
         {
             string[] tableCreationQueries = {
                 @"CREATE TABLE IF NOT EXISTS main (
@@ -152,7 +152,7 @@ namespace CerberPass.Views
             LogDebug("Wszystkie tabele zostały pomyślnie utworzone.");
         }
 
-        private void ExecuteNonQuery(SQLiteConnection connection, string query)
+        public void ExecuteNonQuery(SQLiteConnection connection, string query)
         {
             using (SQLiteCommand command = new SQLiteCommand(query, connection))
             {
@@ -160,7 +160,7 @@ namespace CerberPass.Views
             }
         }
 
-        private void EncryptDatabase(string filePath, string password)
+        public void EncryptDatabase(string filePath, string password)
         {
             byte[] key, iv;
             byte[] salt = GenerateSalt(16);
@@ -186,7 +186,7 @@ namespace CerberPass.Views
                 }
             }
         }
-        private byte[] GenerateSalt(int size)
+        public byte[] GenerateSalt(int size)
         {
             byte[] salt = new byte[size];
             using (var rng = new RNGCryptoServiceProvider())
@@ -197,7 +197,7 @@ namespace CerberPass.Views
         }
 
 
-        private void LogDebug(string message)
+        public void LogDebug(string message)
         {
             string logPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "debug_log.txt");
             File.AppendAllText(logPath, $"{DateTime.Now}: {message}{Environment.NewLine}");
