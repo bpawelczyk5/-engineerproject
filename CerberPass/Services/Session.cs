@@ -8,12 +8,15 @@ namespace CerberPass.Services
 {
     public sealed class Session
     {
-        private static readonly Lazy<Session> lazy = new Lazy<Session>(() => new Session());
-        public static Session Instance { get { return lazy.Value; } }
+        
+        private static Session _instance;
+        public static Session Instance => _instance ?? (_instance = new Session());
 
         private Session() { }
 
         public string DatabasePath { get; set; }
+        public string OriginalDatabasePath { get; set; }
         public string UserName { get; set; }
+        public string UserPassword { get; set; }
     }
 }

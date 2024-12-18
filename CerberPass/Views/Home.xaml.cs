@@ -25,7 +25,7 @@ namespace CerberPass.Views
             LoadLastCopied();
         }
 
-        private async void LoadFavorites()
+        public async void LoadFavorites()
         {
             List<(int ID, string Name, string Url, string Username, string Password, string NameIV, string UrlIV, string UsernameIV, string PasswordIV)> favorites = new List<(int, string, string, string, string, string, string, string, string)>();
 
@@ -135,6 +135,7 @@ namespace CerberPass.Views
                 favoritesWrapPanel.Children.Add(border);
             }
         }
+
 
 
         private async Task<ImageSource> GetFavicon(string url)
@@ -280,7 +281,7 @@ namespace CerberPass.Views
             }
         }
 
-        private async Task LoadLastCopied()
+        public async Task LoadLastCopied()
         {
             List<(int ID, string Name, string Url, string Username, string Password, string NameIV, string UrlIV, string UsernameIV, string PasswordIV)> lastCopied = new List<(int, string, string, string, string, string, string, string, string)>();
 
@@ -414,6 +415,7 @@ namespace CerberPass.Views
                 }
             }
         }
+
 
     }
 }

@@ -125,58 +125,6 @@ C:\Users\CzyK\Downloads\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPas
 C:\Users\CzyK\Downloads\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.csproj.Up2Date
 C:\Users\CzyK\Downloads\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.genruntimeconfig.cache
 C:\Users\CzyK\Downloads\CerberPass\CerberPass\obj\Debug\net8.0-windows\ref\CerberPass.dll
-C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.csproj.AssemblyReference.cache
-C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Home.g.cs
-C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Login.g.cs
-C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\PassGen.g.cs
-C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Passwords.g.cs
-C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Register.g.cs
-C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Vault.g.cs
-C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\Windows\LoginWindow.g.cs
-C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\Windows\MainWindow.g.cs
-C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\App.g.cs
-C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass_MarkupCompile.cache
-C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass_MarkupCompile.lref
-C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\bin\Debug\net8.0-windows\CerberPass.exe
-C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\bin\Debug\net8.0-windows\CerberPass.deps.json
-C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\bin\Debug\net8.0-windows\CerberPass.runtimeconfig.json
-C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\bin\Debug\net8.0-windows\CerberPass.dll
-C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\bin\Debug\net8.0-windows\CerberPass.pdb
-C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\bin\Debug\net8.0-windows\EntityFramework.SqlServer.dll
-C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\bin\Debug\net8.0-windows\EntityFramework.dll
-C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\bin\Debug\net8.0-windows\System.Data.SQLite.dll
-C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\bin\Debug\net8.0-windows\System.Data.SqlClient.dll
-C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\bin\Debug\net8.0-windows\System.Data.SQLite.EF6.dll
-C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\bin\Debug\net8.0-windows\Wpf.Ui.dll
-C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\win-arm64\native\sni.dll
-C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\win-x64\native\sni.dll
-C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\win-x86\native\sni.dll
-C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\linux-x64\native\SQLite.Interop.dll
-C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\osx-x64\native\SQLite.Interop.dll
-C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\win-x64\native\SQLite.Interop.dll
-C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\win-x86\native\SQLite.Interop.dll
-C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
-C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
-C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\App.baml
-C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Home.baml
-C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Login.baml
-C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\PassGen.baml
-C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Passwords.baml
-C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Register.baml
-C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Vault.baml
-C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\Windows\LoginWindow.baml
-C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\Windows\MainWindow.baml
-C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.g.resources
-C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.AssemblyInfoInputs.cache
-C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.AssemblyInfo.cs
-C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.csproj.CoreCompileInputs.cache
-C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.csproj.Up2Date
-C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.dll
-C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\refint\CerberPass.dll
-C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.pdb
-C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.genruntimeconfig.cache
-C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\ref\CerberPass.dll
 C:\Users\ViGO\Desktop\CerberPass\CerberPass\bin\Debug\net8.0-windows\CerberPass.exe
 C:\Users\ViGO\Desktop\CerberPass\CerberPass\bin\Debug\net8.0-windows\CerberPass.deps.json
 C:\Users\ViGO\Desktop\CerberPass\CerberPass\bin\Debug\net8.0-windows\CerberPass.runtimeconfig.json
@@ -500,4 +448,57 @@ J:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-w
 J:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.pdb
 J:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.genruntimeconfig.cache
 J:\cerber_05112024\CerberPassEncryption\CerberPass\CerberPass\obj\Debug\net8.0-windows\ref\CerberPass.dll
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.csproj.AssemblyReference.cache
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Home.g.cs
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Login.g.cs
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\PassGen.g.cs
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Passwords.g.cs
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Register.g.cs
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Vault.g.cs
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\Windows\LoginWindow.g.cs
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\Windows\MainWindow.g.cs
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass_MarkupCompile.cache
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass_MarkupCompile.lref
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\bin\Debug\net8.0-windows\CerberPass.exe
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\bin\Debug\net8.0-windows\CerberPass.deps.json
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\bin\Debug\net8.0-windows\CerberPass.runtimeconfig.json
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\bin\Debug\net8.0-windows\CerberPass.dll
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\bin\Debug\net8.0-windows\CerberPass.pdb
 C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\bin\Debug\net8.0-windows\BCrypt.Net-Next.dll
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\bin\Debug\net8.0-windows\EntityFramework.SqlServer.dll
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\bin\Debug\net8.0-windows\EntityFramework.dll
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\bin\Debug\net8.0-windows\System.Data.SQLite.dll
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\bin\Debug\net8.0-windows\System.Data.SqlClient.dll
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\bin\Debug\net8.0-windows\System.Data.SQLite.EF6.dll
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\bin\Debug\net8.0-windows\Wpf.Ui.dll
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\linux-x64\native\SQLite.Interop.dll
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\osx-x64\native\SQLite.Interop.dll
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\win-x64\native\SQLite.Interop.dll
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\win-x86\native\SQLite.Interop.dll
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\bin\Debug\net8.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\App.baml
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Home.baml
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Login.baml
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\PassGen.baml
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Passwords.baml
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Register.baml
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\Views\Vault.baml
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\Windows\LoginWindow.baml
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\Windows\MainWindow.baml
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.g.resources
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.AssemblyInfoInputs.cache
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.AssemblyInfo.cs
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.csproj.CoreCompileInputs.cache
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.sourcelink.json
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.csproj.Up2Date
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.dll
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\refint\CerberPass.dll
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.pdb
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\CerberPass.genruntimeconfig.cache
+C:\Users\CzyK\Desktop\Studia\Praca inżynierska\CerberPass\CerberPass\obj\Debug\net8.0-windows\ref\CerberPass.dll

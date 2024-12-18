@@ -15,6 +15,9 @@ using Wpf.Ui.Controls;
 using System.Security.Cryptography;
 using System.Text.RegularExpressions;
 using System.Windows.Input;
+using System.Threading.Tasks;
+using System.IO;
+using CerberPass.Services;
 
 namespace CerberPass.Views
 {
@@ -451,9 +454,10 @@ namespace CerberPass.Views
             }
         }
 
-        private void AddCreditCard()
+        private async void AddCreditCard()
         {
             string dbPath = Session.Instance.DatabasePath;
+            string originalDbPath = Session.Instance.OriginalDatabasePath; // Pobierz ścieżkę do oryginalnej bazy
 
             if (string.IsNullOrEmpty(dbPath))
             {
@@ -517,6 +521,9 @@ namespace CerberPass.Views
                 LoadCreditCards();
                 ClearCreditCardForm();
                 addCreditCardDialog.Visibility = Visibility.Collapsed;
+
+                // Zapisz zmiany z tymczasowej bazy do oryginalnej
+                await SaveChangesToOriginalDatabase(originalDbPath);
             }
             catch (Exception ex)
             {
@@ -525,9 +532,10 @@ namespace CerberPass.Views
         }
 
 
-        private void AddContact()
+        private async void AddContact()
         {
             string dbPath = Session.Instance.DatabasePath;
+            string originalDbPath = Session.Instance.OriginalDatabasePath; // Pobierz ścieżkę do oryginalnej bazy
 
             if (string.IsNullOrEmpty(dbPath))
             {
@@ -585,6 +593,9 @@ namespace CerberPass.Views
                 LoadContacts();
                 ClearContactForm();
                 addContactDialog.Visibility = Visibility.Collapsed;
+
+                // Zapisz zmiany z tymczasowej bazy do oryginalnej
+                await SaveChangesToOriginalDatabase(originalDbPath);
             }
             catch (Exception ex)
             {
@@ -592,9 +603,10 @@ namespace CerberPass.Views
             }
         }
 
-        private void AddNote()
+        private async void AddNote()
         {
             string dbPath = Session.Instance.DatabasePath;
+            string originalDbPath = Session.Instance.OriginalDatabasePath; // Pobierz ścieżkę do oryginalnej bazy
 
             if (string.IsNullOrEmpty(dbPath))
             {
@@ -635,6 +647,8 @@ namespace CerberPass.Views
                 LoadNotes();
                 ClearNoteForm();
                 addNoteDialog.Visibility = Visibility.Collapsed;
+                // Zapisz zmiany z tymczasowej bazy do oryginalnej
+                await SaveChangesToOriginalDatabase(originalDbPath);
             }
             catch (Exception ex)
             {
@@ -774,7 +788,7 @@ namespace CerberPass.Views
 
             // Załaduj dane do pól tekstowych dialogu
             editCreditCardNameTextBox.Text = selectedEntry.Name;
-            editCardNumberTextBox.Password = decryptedCardNumber; 
+            editCardNumberTextBox.Password = decryptedCardNumber;
             editExpirationDateTextBox.Password = decryptedDate;
 
             // Wyczyść pole, aby było puste przy każdej nowej edycji
@@ -788,7 +802,7 @@ namespace CerberPass.Views
         }
 
 
-        private void EditCreditCardDialog_ButtonClicked(object sender, RoutedEventArgs e)
+        private async void EditCreditCardDialog_ButtonClicked(object sender, RoutedEventArgs e)
         {
             // Pobierz wpis przechowywany w Tag
             var editedEntry = (CreditCardEntry)editCreditCardDialog.Tag;
@@ -807,6 +821,9 @@ namespace CerberPass.Views
 
             // Odśwież widok listy
             LoadCreditCards();
+
+            // Zapisz zmiany z tymczasowej bazy do oryginalnej
+            await SaveChangesToOriginalDatabase(Session.Instance.OriginalDatabasePath);
         }
 
 
@@ -895,7 +912,7 @@ namespace CerberPass.Views
         }
 
 
-        private void EditContactDialog_ButtonClicked(object sender, RoutedEventArgs e)
+        private async void EditContactDialog_ButtonClicked(object sender, RoutedEventArgs e)
         {
             // Pobierz wpis przechowywany w Tag
             var editedEntry = (ContactEntry)editContactDialog.Tag;
@@ -914,6 +931,9 @@ namespace CerberPass.Views
 
             // Odśwież widok listy
             LoadContacts();
+
+            // Zapisz zmiany z tymczasowej bazy do oryginalnej
+            await SaveChangesToOriginalDatabase(Session.Instance.OriginalDatabasePath);
         }
 
         private void EditContact(ContactEntry entry)
@@ -984,7 +1004,7 @@ namespace CerberPass.Views
 
             // Odszyfruj tekst przed wyświetleniem
             string decryptedText = AES.Decrypt(selectedEntry.EncryptedText, selectedEntry.IV); // Zmienna IVText musi być dostępna
-                                                                                                   // Wyczyść zawartość RichTextBox przed ustawieniem nowego tekstu
+                                                                                               // Wyczyść zawartość RichTextBox przed ustawieniem nowego tekstu
             editNoteContentTextBox.Document.Blocks.Clear();
 
             // Ustaw odszyfrowany tekst jako zawartość RichTextBox
@@ -1007,7 +1027,7 @@ namespace CerberPass.Views
 
 
 
-        private void EditNoteDialog_ButtonClicked(object sender, RoutedEventArgs e)
+        private async void EditNoteDialog_ButtonClicked(object sender, RoutedEventArgs e)
         {
             var editedEntry = (NoteEntry)editNoteDialog.Tag;
 
@@ -1026,6 +1046,9 @@ namespace CerberPass.Views
 
             // Odśwież widok listy
             LoadNotes();
+
+            // Zapisz zmiany z tymczasowej bazy do oryginalnej
+            await SaveChangesToOriginalDatabase(Session.Instance.OriginalDatabasePath);
         }
 
         private void EditNote(NoteEntry entry)
@@ -1095,7 +1118,7 @@ namespace CerberPass.Views
             throw new InvalidOperationException("No table is selected");
         }
 
-        private void DeleteCreditCard_Click(object sender, RoutedEventArgs e)
+        private async void DeleteCreditCard_Click(object sender, RoutedEventArgs e)
         {
             var button = sender as Wpf.Ui.Controls.Button;
             var creditCard = button?.Tag as CreditCardEntry;
@@ -1107,6 +1130,7 @@ namespace CerberPass.Views
             }
 
             string dbPath = Session.Instance.DatabasePath;
+            string originalDbPath = Session.Instance.OriginalDatabasePath;
 
             if (string.IsNullOrEmpty(dbPath))
             {
@@ -1131,6 +1155,7 @@ namespace CerberPass.Views
                 }
 
                 LoadCreditCards();  // Odśwież dane po usunięciu
+                await SaveChangesToOriginalDatabase(originalDbPath);
             }
             catch (Exception ex)
             {
@@ -1139,10 +1164,12 @@ namespace CerberPass.Views
         }
 
 
-        private void DeleteContact_Click(object sender, RoutedEventArgs e)
+        private async void DeleteContact_Click(object sender, RoutedEventArgs e)
         {
             var button = sender as Wpf.Ui.Controls.Button;
             var contact = button?.Tag as ContactEntry;
+            string originalDbPath = Session.Instance.OriginalDatabasePath;
+
 
             if (contact != null)
             {
@@ -1165,6 +1192,7 @@ namespace CerberPass.Views
                     }
 
                     LoadContacts();  // Odśwież dane po usunięciu
+                    await SaveChangesToOriginalDatabase(originalDbPath);
                 }
                 catch (Exception ex)
                 {
@@ -1173,10 +1201,12 @@ namespace CerberPass.Views
             }
         }
 
-        private void DeleteNotes_Click(object sender, RoutedEventArgs e)
+        private async void DeleteNotes_Click(object sender, RoutedEventArgs e)
         {
             var button = sender as Wpf.Ui.Controls.Button;
             var note = button?.Tag as NoteEntry; // Upewnij się, że NoteEntry jest poprawną klasą
+            string originalDbPath = Session.Instance.OriginalDatabasePath;
+
 
             if (note == null)
             {
@@ -1209,6 +1239,7 @@ namespace CerberPass.Views
                 }
 
                 LoadNotes(); // Odśwież dane po usunięciu
+                await SaveChangesToOriginalDatabase(originalDbPath);
             }
             catch (Exception ex)
             {
@@ -1266,6 +1297,186 @@ namespace CerberPass.Views
             {
                 cardEntry.IsCvvVisible = !cardEntry.IsCvvVisible;
             }
+        }
+
+        private async Task SaveChangesToOriginalDatabase(string originalDbPath)
+        {
+            if (string.IsNullOrEmpty(originalDbPath))
+            {
+                System.Windows.MessageBox.Show("Nie znaleziono ścieżki do oryginalnej bazy danych.");
+                return;
+            }
+            try
+            {
+                string tempDbPath = Session.Instance.DatabasePath;
+                string password = Session.Instance.UserPassword;
+
+                if (string.IsNullOrEmpty(tempDbPath))
+                {
+                    Utilities.LogDebug("Tymczasowa baza danych nie jest dostępna.");
+                    return;
+                }
+
+                if (string.IsNullOrEmpty(password))
+                {
+                    Utilities.LogDebug("Hasło użytkownika nie jest dostępne.");
+                    return;
+                }
+
+                Utilities.LogDebug($"Rozpoczęto zapis zmian do oryginalnej bazy danych: {originalDbPath} z tymczasowej {tempDbPath}");
+                Utilities.ForceCloseSQLiteConnections(tempDbPath);
+
+
+                await Task.Run(() =>
+                {
+                    EncryptAndReplaceDatabase(tempDbPath, originalDbPath, password);
+                });
+
+                Utilities.LogDebug($"Zapis zmian do oryginalnej bazy danych: {originalDbPath} zakończony.");
+
+            }
+            catch (Exception ex)
+            {
+                System.Windows.MessageBox.Show($"Wystąpił błąd podczas zapisywania zmian w bazie danych: {ex.Message}", "Błąd", System.Windows.MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+        public void EncryptAndReplaceDatabase(string tempDbPath, string originalDbPath, string password)
+        {
+            byte[] key, iv;
+            byte[] salt = GetSaltFromEncryptedDb(originalDbPath);
+
+            using (var keyGenerator = new Rfc2898DeriveBytes(password, salt))
+            {
+                key = keyGenerator.GetBytes(32);
+                iv = keyGenerator.GetBytes(16);
+            }
+
+            string tempEncryptedFilePath = Path.Combine(Path.GetTempPath(), $"{Guid.NewGuid()}.db");
+
+
+            try
+            {
+                using (var tempFileStream = new FileStream(tempDbPath, FileMode.Open, FileAccess.Read, FileShare.None))
+                {
+                    byte[] fileData = new byte[tempFileStream.Length];
+                    tempFileStream.Read(fileData, 0, fileData.Length);
+
+                    using (var tempEncryptedFileStream = new FileStream(tempEncryptedFilePath, FileMode.Create, FileAccess.Write, FileShare.None))
+                    {
+                        using (var encryptor = Aes.Create().CreateEncryptor(key, iv))
+                        using (var cryptoStream = new CryptoStream(tempEncryptedFileStream, encryptor, CryptoStreamMode.Write))
+                        {
+                            tempEncryptedFileStream.Write(salt, 0, salt.Length);
+                            cryptoStream.Write(fileData, 0, fileData.Length);
+                        }
+                    }
+                }
+
+
+
+                // Replace the original file
+
+                AttemptFileReplace(originalDbPath, tempEncryptedFilePath);
+
+                Utilities.LogDebug($"Baza danych '{originalDbPath}' została zaszyfrowana i nadpisana.");
+
+            }
+            catch (Exception ex)
+            {
+                Utilities.LogDebug($"Błąd podczas szyfrowania bazy danych: {ex.Message}");
+                throw;
+            }
+            finally
+            {
+                if (File.Exists(tempEncryptedFilePath))
+                {
+                    File.Delete(tempEncryptedFilePath);
+                }
+            }
+        }
+
+        private void AttemptFileReplace(string originalDbPath, string tempEncryptedFilePath)
+        {
+            int maxRetries = 5;
+            int retryDelayMs = 100;
+
+            for (int i = 0; i < maxRetries; i++)
+            {
+                try
+                {
+                    File.Delete(originalDbPath);
+                    File.Move(tempEncryptedFilePath, originalDbPath);
+                    return;
+                }
+                catch (IOException ex)
+                {
+                    Utilities.LogDebug($"Błąd podczas nadpisywania pliku  {originalDbPath} próba {i + 1} z {maxRetries} {ex.Message}");
+                    if (i == maxRetries - 1)
+                    {
+                        throw;
+                    }
+                    Thread.Sleep(retryDelayMs);
+                }
+            }
+
+        }
+        public void EncryptDatabase(string tempDbPath, string originalDbPath, string password)
+        {
+            byte[] key, iv;
+            byte[] salt = GetSaltFromEncryptedDb(originalDbPath);
+
+            using (var keyGenerator = new Rfc2898DeriveBytes(password, salt))
+            {
+                key = keyGenerator.GetBytes(32);
+                iv = keyGenerator.GetBytes(16);
+            }
+
+            try
+            {
+                using (var tempFileStream = new FileStream(tempDbPath, FileMode.Open, FileAccess.Read, FileShare.None))
+                {
+                    byte[] fileData = new byte[tempFileStream.Length];
+                    tempFileStream.Read(fileData, 0, fileData.Length);
+
+                    using (var originalFileStream = new FileStream(originalDbPath, FileMode.Open, FileAccess.ReadWrite, FileShare.None))
+                    {
+                        originalFileStream.Seek(0, SeekOrigin.Begin);
+
+                        using (var encryptor = Aes.Create().CreateEncryptor(key, iv))
+                        using (var cryptoStream = new CryptoStream(originalFileStream, encryptor, CryptoStreamMode.Write))
+                        {
+                            originalFileStream.Write(salt, 0, salt.Length);
+                            cryptoStream.Write(fileData, 0, fileData.Length);
+                        }
+                    }
+                }
+
+                Utilities.LogDebug($"Baza danych '{originalDbPath}' została zaszyfrowana i nadpisana.");
+            }
+            catch (Exception ex)
+            {
+                Utilities.LogDebug($"Błąd podczas szyfrowania bazy danych: {ex.Message}");
+                throw;
+            }
+        }
+
+        public byte[] GetSaltFromEncryptedDb(string encryptedDbPath)
+        {
+            byte[] salt = new byte[16];
+            try
+            {
+                using (var fileStream = new FileStream(encryptedDbPath, FileMode.Open, FileAccess.Read, FileShare.Read))
+                {
+                    fileStream.Read(salt, 0, 16); // Odczytaj salt z początku pliku
+                }
+            }
+            catch (Exception ex)
+            {
+                Utilities.LogDebug($"Błąd podczas pobierania salt z bazy danych: {ex.Message}");
+                throw;
+            }
+            return salt;
         }
     }
 
@@ -1463,7 +1674,12 @@ namespace CerberPass.Views
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
-    }
 
-    //------------------------------------------------------------------------------------------------------- MODELS <END> ---------------------------------------------------------------------------------//
+        public void LogDebug(string message)
+        {
+            string logPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "debug_log.txt");
+            File.AppendAllText(logPath, $"{DateTime.Now}: {message}{Environment.NewLine}");
+        }
+    }
 }
+//------------------------------------------------------------------------------------------------------- MODELS <END> ---------------------------------------------------------------------------------//

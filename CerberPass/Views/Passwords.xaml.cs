@@ -13,7 +13,8 @@ using System.Windows.Threading;
 using Wpf.Ui.Controls;
 using System.Security.Cryptography;
 using System.ComponentModel;
-
+using System.IO;
+using System.Threading.Tasks; // Dodano dla async
 
 namespace CerberPass.Views
 {
@@ -40,7 +41,7 @@ namespace CerberPass.Views
                 using (SQLiteConnection connection = new SQLiteConnection($"Data Source={dbPath};Version=3;"))
                 {
                     connection.Open();
-                    string sql = "SELECT id, name, user_name, password, url, is_favourite, iv, iv_username, iv_name, iv_url FROM main";
+                    string sql = "SELECT id, name, user_name, password, url, is_favourite, iv, iv_username, iv_name, iv_url, is_lastcopied FROM main";
 
                     SQLiteDataAdapter dataAdapter = new SQLiteDataAdapter(sql, connection);
                     DataSet dataSet = new DataSet();
@@ -62,7 +63,8 @@ namespace CerberPass.Views
                             Url = AES.Decrypt(row["url"].ToString(), row["iv_url"].ToString()),
                             IsFavourite = Convert.ToBoolean(row["is_favourite"]),
                             IV = row["iv"].ToString(),
-                            IV_Username = row["iv_username"].ToString()
+                            IV_Username = row["iv_username"].ToString(),
+                            IsLastCopied = Convert.ToInt32(row["is_lastcopied"])
                         });
                     }
 
@@ -90,7 +92,7 @@ namespace CerberPass.Views
             editPasswordDialog.Visibility = Visibility.Collapsed;
         }
 
-        private void addPasswordDialog_ButtonClicked(object sender, RoutedEventArgs e)
+        private async void addPasswordDialog_ButtonClicked(object sender, RoutedEventArgs e)
         {
             string dbPath = Session.Instance.DatabasePath;
 
@@ -100,11 +102,18 @@ namespace CerberPass.Views
                 return;
             }
 
+            // Logowanie ścieżki bazy danych
+            Utilities.LogDebug($"Ścieżka bazy danych: {dbPath}");
+
+            int rowsAffected = 0; // Deklaracja zmiennej rowsAffected
+            string originalDbPath = Session.Instance.OriginalDatabasePath; // Pobierz ścieżkę do oryginalnej bazy
+
             try
             {
                 using (SQLiteConnection connection = new SQLiteConnection($"Data Source={dbPath};Version=3;"))
                 {
                     connection.Open();
+                    Utilities.LogDebug("Połączenie z bazą danych zostało otwarte.");
 
                     // Szyfruj
                     var (encryptedPassword, ivPassword) = AES.Encrypt(passwordTextBox.Password);
@@ -117,24 +126,39 @@ namespace CerberPass.Views
                     using (SQLiteCommand command = new SQLiteCommand(sql, connection))
                     {
                         command.Parameters.AddWithValue("@name", encryptedName);
-                        command.Parameters.AddWithValue("@user_name", encryptedUsername); // Przechowuje zaszyfrowaną nazwę użytkownika
-                        command.Parameters.AddWithValue("@password", encryptedPassword); // Przechowuje zaszyfrowane hasło
+                        command.Parameters.AddWithValue("@user_name", encryptedUsername);
+                        command.Parameters.AddWithValue("@password", encryptedPassword);
                         command.Parameters.AddWithValue("@url", encryptedUrl);
-                        command.Parameters.AddWithValue("@iv", ivPassword); // Zapisuje IV dla hasła
-                        command.Parameters.AddWithValue("@iv_username", ivUsername); // Zapisuje IV dla nazwy użytkownika
-                        command.Parameters.AddWithValue("@iv_name", ivName); 
+                        command.Parameters.AddWithValue("@iv", ivPassword);
+                        command.Parameters.AddWithValue("@iv_username", ivUsername);
+                        command.Parameters.AddWithValue("@iv_name", ivName);
                         command.Parameters.AddWithValue("@iv_url", ivUrl);
 
-                        command.ExecuteNonQuery();
+                        rowsAffected = command.ExecuteNonQuery(); // Przypisanie wartości do rowsAffected
+                        Utilities.LogDebug($"Liczba zmienionych wierszy: {rowsAffected}");
                     }
+                }
+
+                if (rowsAffected > 0)
+                {
+                    Utilities.LogDebug($"Dodano nowy rekord: Name={nameTextBox.Text}, Username={usernameTextBox.Text}, URL={urlTextBox.Text}");
+                }
+                else
+                {
+                    Utilities.LogDebug("Nie dodano żadnych rekordów.");
                 }
 
                 LoadDataFromMainTable();
                 ClearForm();
                 addPasswordDialog.Visibility = Visibility.Collapsed;
+
+                // Zapisz zmiany z tymczasowej bazy do oryginalnej
+                await SaveChangesToOriginalDatabase(originalDbPath); // Dodano await
+                LoadDataFromHome();
             }
             catch (Exception ex)
             {
+                Utilities.LogDebug($"Wystąpił błąd podczas dodawania danych: {ex.Message}");
                 System.Windows.MessageBox.Show($"Wystąpił błąd podczas dodawania danych: {ex.Message}", "Błąd", System.Windows.MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
@@ -273,7 +297,7 @@ namespace CerberPass.Views
             editPasswordDialog.Tag = selectedEntry;
         }
 
-        private void EditPasswordDialog_ButtonClicked(object sender, RoutedEventArgs e)
+        private async void EditPasswordDialog_ButtonClicked(object sender, RoutedEventArgs e)
         {
             var editedEntry = (PasswordEntry)editPasswordDialog.Tag;
 
@@ -303,6 +327,10 @@ namespace CerberPass.Views
             UpdatePasswordInDatabase(editedEntry);
             editPasswordDialog.Visibility = Visibility.Collapsed;
             LoadDataFromMainTable();
+
+            // Zapisz zmiany do oryginalnej bazy danych
+            await SaveChangesToOriginalDatabase(Session.Instance.OriginalDatabasePath);
+            LoadDataFromHome();
         }
 
 
@@ -327,28 +355,26 @@ namespace CerberPass.Views
                     using (SQLiteCommand command = new SQLiteCommand(sql, connection))
                     {
                         command.Parameters.AddWithValue("@name", entry.Name);
-                        command.Parameters.AddWithValue("@username", entry.Username); // Zapisz zaszyfrowaną nazwę użytkownika
+                        command.Parameters.AddWithValue("@username", entry.Username);
                         command.Parameters.AddWithValue("@password", entry.EncryptedPassword);
                         command.Parameters.AddWithValue("@url", entry.Url);
                         command.Parameters.AddWithValue("@iv", entry.IV);
-                        command.Parameters.AddWithValue("@ivUsername", entry.IV_Username); // Zapisz IV dla nazwy użytkownika
-                        command.Parameters.AddWithValue("@ivName", entry.IV_Name); // Zapisz IV dla nazwy użytkownika
-                        command.Parameters.AddWithValue("@ivUrl", entry.IV_Url); // Zapisz IV dla nazwy użytkownika
+                        command.Parameters.AddWithValue("@ivUsername", entry.IV_Username);
+                        command.Parameters.AddWithValue("@ivName", entry.IV_Name);
+                        command.Parameters.AddWithValue("@ivUrl", entry.IV_Url);
                         command.Parameters.AddWithValue("@id", entry.ID);
 
-                        int rowsAffected = command.ExecuteNonQuery();
-
-                        if (rowsAffected == 0)
-                        {
-                            System.Windows.MessageBox.Show("Nie znaleziono rekordu do zaktualizowania.");
-                        }
+                        command.ExecuteNonQuery();
                     }
                 }
+
+                Utilities.LogDebug($"Zaktualizowano rekord: ID={entry.ID}, Name={entry.Name}, Username={entry.Username}, URL={entry.Url}");
 
                 LoadDataFromMainTable();
             }
             catch (Exception ex)
             {
+                Utilities.LogDebug($"Wystąpił błąd podczas aktualizacji danych: {ex.Message}");
                 System.Windows.MessageBox.Show($"Wystąpił błąd podczas aktualizacji danych: {ex.Message}", "Błąd", System.Windows.MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
@@ -371,12 +397,10 @@ namespace CerberPass.Views
             public string Url { get; set; }
             public bool IsFavourite { get; set; }
             public string IV { get; set; }               // Wektor inicjalizacyjny dla hasła
-            public string IV_Username { get; set; }      
+            public string IV_Username { get; set; }
             public string IV_Name { get; set; }
             public string IV_Url { get; set; }
-
-
-
+            public int IsLastCopied { get; set; }
             private bool _isPasswordVisible;
             public bool IsPasswordVisible
             {
@@ -402,7 +426,7 @@ namespace CerberPass.Views
         }
 
 
-        private void DeleteButton_Click(object sender, RoutedEventArgs e)
+        private async void DeleteButton_Click(object sender, RoutedEventArgs e)
         {
             // Sprawdzenie, czy nadawca zdarzenia to przycisk z odpowiednim tagiem
             if (sender is Wpf.Ui.Controls.Button button && button.Tag is int id)
@@ -431,6 +455,10 @@ namespace CerberPass.Views
                     }
 
                     LoadDataFromMainTable();  // Odświeżenie danych po usunięciu rekordu
+
+                    // Zapisz zmiany do oryginalnej bazy danych
+                    await SaveChangesToOriginalDatabase(Session.Instance.OriginalDatabasePath);
+                    LoadDataFromHome();
                 }
                 catch (Exception ex)
                 {
@@ -439,7 +467,7 @@ namespace CerberPass.Views
             }
         }
 
-        private void FavouriteButton_Click(object sender, RoutedEventArgs e)
+        private async void FavouriteButton_Click(object sender, RoutedEventArgs e)
         {
             if (sender is Wpf.Ui.Controls.Button button && button.Tag is int id) // Oczekujemy, że Tag zawiera ID
             {
@@ -457,6 +485,10 @@ namespace CerberPass.Views
 
                 // Opcjonalnie: Odśwież listę główną, aby zaktualizować widok
                 LoadDataFromMainTable();
+
+                // Zapisz zmiany do oryginalnej bazy danych
+                await SaveChangesToOriginalDatabase(Session.Instance.OriginalDatabasePath);
+                LoadDataFromHome();
             }
             else
             {
@@ -583,6 +615,11 @@ namespace CerberPass.Views
                     updateCommand.Parameters.AddWithValue("@id", id);
                     await updateCommand.ExecuteNonQueryAsync();
                 }
+
+                // Zapisz zmiany do oryginalnej bazy danych
+                await SaveChangesToOriginalDatabase(Session.Instance.OriginalDatabasePath);
+                LoadDataFromMainTable();
+                LoadDataFromHome();
             }
             catch (Exception ex)
             {
@@ -590,5 +627,141 @@ namespace CerberPass.Views
             }
         }
 
+        private async Task SaveChangesToOriginalDatabase(string originalDbPath)
+        {
+            if (string.IsNullOrEmpty(originalDbPath))
+            {
+                System.Windows.MessageBox.Show("Nie znaleziono ścieżki do oryginalnej bazy danych.");
+                return;
+            }
+            try
+            {
+                string tempDbPath = Session.Instance.DatabasePath;
+                string password = Session.Instance.UserPassword;
+
+                if (string.IsNullOrEmpty(tempDbPath))
+                {
+                    Utilities.LogDebug("Tymczasowa baza danych nie jest dostępna.");
+                    return;
+                }
+
+                if (string.IsNullOrEmpty(password))
+                {
+                    Utilities.LogDebug("Hasło użytkownika nie jest dostępne.");
+                    return;
+                }
+                Utilities.LogDebug($"Rozpoczęto zapis zmian do oryginalnej bazy danych: {originalDbPath} z tymczasowej {tempDbPath}");
+                Utilities.ForceCloseSQLiteConnections(tempDbPath);
+                await Task.Delay(100);
+
+                await Task.Run(() =>
+                {
+                    EncryptAndReplaceDatabase(tempDbPath, originalDbPath, password);
+                });
+
+                Utilities.LogDebug($"Zapis zmian do oryginalnej bazy danych: {originalDbPath} zakończony.");
+
+            }
+            catch (Exception ex)
+            {
+                System.Windows.MessageBox.Show($"Wystąpił błąd podczas zapisywania zmian w bazie danych: {ex.Message}", "Błąd", System.Windows.MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+        private void LoadDataFromHome()
+        {
+            Application.Current.Dispatcher.Invoke(() =>
+            {
+                if (Window.GetWindow(this) is MainWindow mainWindow)
+                {
+                    if (mainWindow.MainContent.Content is Home home)
+                    {
+                        home.LoadFavorites();
+                        home.LoadLastCopied();
+                    }
+                }
+            });
+        }
+        public void EncryptAndReplaceDatabase(string tempDbPath, string originalDbPath, string password)
+        {
+            byte[] key, iv;
+            byte[] salt = GetSaltFromEncryptedDb(originalDbPath);
+
+            using (var keyGenerator = new Rfc2898DeriveBytes(password, salt))
+            {
+                key = keyGenerator.GetBytes(32);
+                iv = keyGenerator.GetBytes(16);
+            }
+
+            try
+            {
+                using (var tempFileStream = new FileStream(tempDbPath, FileMode.Open, FileAccess.Read, FileShare.None))
+                {
+                    byte[] fileData = new byte[tempFileStream.Length];
+                    tempFileStream.Read(fileData, 0, fileData.Length);
+
+                    using (var originalFileStream = new FileStream(originalDbPath, FileMode.Open, FileAccess.ReadWrite, FileShare.None))
+                    {
+                        originalFileStream.Seek(0, SeekOrigin.Begin);
+
+                        using (var encryptor = Aes.Create().CreateEncryptor(key, iv))
+                        using (var cryptoStream = new CryptoStream(originalFileStream, encryptor, CryptoStreamMode.Write))
+                        {
+                            originalFileStream.Write(salt, 0, salt.Length);
+                            cryptoStream.Write(fileData, 0, fileData.Length);
+                        }
+                    }
+                }
+
+                Utilities.LogDebug($"Baza danych '{originalDbPath}' została zaszyfrowana i nadpisana.");
+            }
+            catch (Exception ex)
+            {
+                Utilities.LogDebug($"Błąd podczas szyfrowania bazy danych: {ex.Message}");
+                throw;
+            }
+        }
+        private void AttemptFileReplace(string originalDbPath, string tempEncryptedFilePath)
+        {
+            int maxRetries = 5;
+            int retryDelayMs = 100;
+
+            for (int i = 0; i < maxRetries; i++)
+            {
+                try
+                {
+                    File.Delete(originalDbPath);
+                    File.Move(tempEncryptedFilePath, originalDbPath);
+                    return;
+                }
+                catch (IOException ex)
+                {
+                    Utilities.LogDebug($"Błąd podczas nadpisywania pliku  {originalDbPath} próba {i + 1} z {maxRetries} {ex.Message}");
+                    if (i == maxRetries - 1)
+                    {
+                        throw;
+                    }
+                    Thread.Sleep(retryDelayMs);
+                }
+            }
+
+        }
+
+        public byte[] GetSaltFromEncryptedDb(string encryptedDbPath)
+        {
+            byte[] salt = new byte[16];
+            try
+            {
+                using (var fileStream = new FileStream(encryptedDbPath, FileMode.Open, FileAccess.Read, FileShare.Read))
+                {
+                    fileStream.Read(salt, 0, 16); // Odczytaj salt z początku pliku
+                }
+            }
+            catch (Exception ex)
+            {
+                Utilities.LogDebug($"Błąd podczas pobierania salt z bazy danych: {ex.Message}");
+                throw;
+            }
+            return salt;
+        }
     }
 }

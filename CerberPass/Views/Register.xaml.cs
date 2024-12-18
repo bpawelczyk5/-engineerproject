@@ -1,5 +1,4 @@
-﻿using CerberPass.Views;
-using System;
+﻿using System;
 using System.Data.SQLite;
 using System.IO;
 using System.Security.Cryptography;
@@ -17,9 +16,8 @@ namespace CerberPass.Views
             InitializeComponent();
         }
 
-        private void CreateDatabase_Click(object sender, RoutedEventArgs e)
+        public void CreateDatabase_Click(object sender, RoutedEventArgs e)
         {
-            // Sprawdź, czy hasła są zgodne
             if (passwordBox.Password != repeatPasswordBox.Password)
             {
                 MessageBox.Show("Hasła nie są takie same. Spróbuj ponownie.");
@@ -27,11 +25,8 @@ namespace CerberPass.Views
             }
 
             string userPassword = passwordBox.Password;
-
-            // Haszuj hasło za pomocą bcrypt
             string hashedPassword = BCrypt.Net.BCrypt.HashPassword(userPassword);
 
-            // Utwórz bazę danych SQLite
             string desktopPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
             string dbName = dbNameTextBox.Text.Trim();
 
@@ -45,7 +40,6 @@ namespace CerberPass.Views
 
             try
             {
-                // Tworzenie pliku bazy danych
                 SQLiteConnection.CreateFile(dbPath);
                 LogDebug($"Plik bazy danych '{dbPath}' został utworzony.");
 
@@ -54,43 +48,42 @@ namespace CerberPass.Views
                     conn.Open();
                     LogDebug("Połączenie z bazą danych zostało otwarte.");
 
-                    // Tworzenie tabel
-                    CreateTables(conn);
-
-                    // Wstawienie hasła do tabeli password
-                    string insertPasswordQuery = "INSERT INTO password (password) VALUES (@password)";
-                    using (SQLiteCommand insertCommand = new SQLiteCommand(insertPasswordQuery, conn))
+                    using (var transaction = conn.BeginTransaction())
                     {
-                        insertCommand.Parameters.AddWithValue("@password", hashedPassword);
-                        insertCommand.ExecuteNonQuery();
-                    }
+                        CreateTables(conn);
 
-                    LogDebug("Hasło zostało zapisane w tabeli password.");
+                        string insertPasswordQuery = "INSERT INTO password (password) VALUES (@password)";
+                        using (SQLiteCommand insertCommand = new SQLiteCommand(insertPasswordQuery, conn))
+                        {
+                            insertCommand.Parameters.AddWithValue("@password", hashedPassword);
+                            insertCommand.ExecuteNonQuery();
+                        }
+
+                        transaction.Commit();
+                        LogDebug("Hasło zostało zapisane w tabeli password.");
+                    }
                 }
 
-                // Szyfruj bazę danych po zamknięciu połączenia
                 EncryptDatabase(dbPath, userPassword);
-
                 MessageBox.Show("Baza danych została utworzona i zaszyfrowana.");
 
-                // Przekieruj do Login.xaml
                 LoginWindow loginWindow = (LoginWindow)Window.GetWindow(this);
                 loginWindow.LoginContent.Content = new Views.Login();
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Wystąpił błąd podczas tworzenia bazy danych: {ex.Message}");
+                MessageBox.Show($"Błąd podczas tworzenia bazy danych: {ex.Message}");
                 LogDebug($"Exception: {ex.Message}\nStackTrace: {ex.StackTrace}");
             }
         }
 
-        private void BackToLogin_Click(object sender, RoutedEventArgs e)
+        public void BackToLogin_Click(object sender, RoutedEventArgs e)
         {
             LoginWindow loginWindow = (LoginWindow)Window.GetWindow(this);
             loginWindow.LoginContent.Content = new Views.Login();
         }
 
-        private void CreateTables(SQLiteConnection conn)
+        public void CreateTables(SQLiteConnection conn)
         {
             string[] tableCreationQueries = {
                 @"CREATE TABLE IF NOT EXISTS main (
@@ -152,7 +145,7 @@ namespace CerberPass.Views
             LogDebug("Wszystkie tabele zostały pomyślnie utworzone.");
         }
 
-        private void ExecuteNonQuery(SQLiteConnection connection, string query)
+        public void ExecuteNonQuery(SQLiteConnection connection, string query)
         {
             using (SQLiteCommand command = new SQLiteCommand(query, connection))
             {
@@ -160,33 +153,45 @@ namespace CerberPass.Views
             }
         }
 
-        private void EncryptDatabase(string filePath, string password)
+        public void EncryptDatabase(string filePath, string password)
         {
             byte[] key, iv;
             byte[] salt = GenerateSalt(16);
 
             using (var keyGenerator = new Rfc2898DeriveBytes(password, salt))
             {
-                key = keyGenerator.GetBytes(32); // Klucz AES (256 bitów)
-                iv = keyGenerator.GetBytes(16); // IV AES (128 bitów)
+                key = keyGenerator.GetBytes(32);
+                iv = keyGenerator.GetBytes(16);
             }
 
-            // Zapisz sól na początku pliku
-            using (var fileStream = new FileStream(filePath, FileMode.Open, FileAccess.ReadWrite, FileShare.None))
+            try
             {
-                byte[] fileData = new byte[fileStream.Length];
-                fileStream.Read(fileData, 0, fileData.Length);
-
-                using (var encryptor = Aes.Create().CreateEncryptor(key, iv))
-                using (var cryptoStream = new CryptoStream(fileStream, encryptor, CryptoStreamMode.Write))
+                using (var fileStream = new FileStream(filePath, FileMode.Open, FileAccess.ReadWrite, FileShare.None))
                 {
+                    byte[] fileData = new byte[fileStream.Length];
+                    fileStream.Read(fileData, 0, fileData.Length);
+
                     fileStream.Seek(0, SeekOrigin.Begin);
-                    fileStream.Write(salt, 0, salt.Length); // Zapisz sól
-                    cryptoStream.Write(fileData, 0, fileData.Length); // Zapisz zaszyfrowane dane
+
+                    using (var encryptor = Aes.Create().CreateEncryptor(key, iv))
+                    using (var cryptoStream = new CryptoStream(fileStream, encryptor, CryptoStreamMode.Write))
+                    {
+                        fileStream.Write(salt, 0, salt.Length);
+                        cryptoStream.Write(fileData, 0, fileData.Length);
+                    }
                 }
+
+                LogDebug($"Baza danych '{filePath}' została zaszyfrowana.");
+            }
+            catch (Exception ex)
+            {
+                LogDebug($"Błąd podczas szyfrowania bazy danych: {ex.Message}");
+                throw;
             }
         }
-        private byte[] GenerateSalt(int size)
+
+
+        public byte[] GenerateSalt(int size)
         {
             byte[] salt = new byte[size];
             using (var rng = new RNGCryptoServiceProvider())
@@ -196,8 +201,7 @@ namespace CerberPass.Views
             return salt;
         }
 
-
-        private void LogDebug(string message)
+        public void LogDebug(string message)
         {
             string logPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "debug_log.txt");
             File.AppendAllText(logPath, $"{DateTime.Now}: {message}{Environment.NewLine}");
